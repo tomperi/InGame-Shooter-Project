@@ -241,7 +241,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 756881414}
   m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 1.566, y: -0, z: 0}
+  m_LocalPosition: {x: 0.7, y: -0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1612252066}
@@ -265,7 +265,8 @@ MonoBehaviour:
   ShotSpawn1: {fileID: 1612252065}
   ShotSpawn2: {fileID: 1562397595}
   player: 0
-  speed: 3
+  speed: 2
+  rotateSpeed: 2
 --- !u!1 &1188686240
 GameObject:
   m_ObjectHideFlags: 0
@@ -492,7 +493,8 @@ MonoBehaviour:
   ShotSpawn1: {fileID: 1188686240}
   ShotSpawn2: {fileID: 1437743917}
   player: 1
-  speed: 3
+  speed: 2
+  rotateSpeed: 2
 --- !u!95 &1664810782
 Animator:
   serializedVersion: 3
@@ -561,7 +563,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1664810780}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -1.223, y: -0, z: 0}
+  m_LocalPosition: {x: -0.7, y: -0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1188686241}
