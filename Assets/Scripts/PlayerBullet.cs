@@ -35,4 +35,11 @@ public class PlayerBullet : MonoBehaviour {
 
         
 	}
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        Debug.Log("Destroy");
+        Destroy(other.gameObject);
+        Destroy(this.gameObject);
+    }
 }
