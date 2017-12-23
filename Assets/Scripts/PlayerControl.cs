@@ -11,9 +11,11 @@ public class PlayerControl : MonoBehaviour
     public GameObject ShotSpawn1;
     public GameObject ShotSpawn2;
     public Player player;
+    public float speed, rotateSpeed;
+    public bool dock;
+
     private string verticalAxis, horizontalAxis, fire;
     private Vector2 min, max;
-    public float speed, rotateSpeed;
     
 
 	// Use this for initialization
@@ -40,23 +42,14 @@ public class PlayerControl : MonoBehaviour
 
         // Rotate
         float rotate = Input.GetAxisRaw(horizontalAxis);
-        Rotate(rotate);
+        if (!dock)
+        {
+            Rotate(rotate);
+        }
 
         if (Input.GetKeyDown(fire))
         {
-            GameObject bullet1 = (GameObject)Instantiate(PlayerBullet);
-            bullet1.transform.position = ShotSpawn1.transform.position;
-            bullet1.transform.rotation = ShotSpawn1.transform.rotation;
-
-            GameObject bullet2 = (GameObject)Instantiate(PlayerBullet);
-            bullet2.transform.position = ShotSpawn2.transform.position;
-            bullet2.transform.rotation = ShotSpawn1.transform.rotation;
-
-            if (player.Equals(Player.left))
-            {
-                bullet1.GetComponent<PlayerBullet>().speed *= -1f;
-                bullet2.GetComponent<PlayerBullet>().speed *= -1f;
-            }
+            Shot();
         }
 	}
 
@@ -85,6 +78,17 @@ public class PlayerControl : MonoBehaviour
     void Rotate(float rotate)
     {
         transform.Rotate(new Vector3(0, 0, rotate * rotateSpeed *-1));
+    }
+
+    void Shot()
+    {
+        GameObject bullet1 = (GameObject)Instantiate(PlayerBullet);
+        bullet1.transform.position = ShotSpawn1.transform.position;
+        bullet1.transform.rotation = ShotSpawn1.transform.rotation;
+
+        GameObject bullet2 = (GameObject)Instantiate(PlayerBullet);
+        bullet2.transform.position = ShotSpawn2.transform.position;
+        bullet2.transform.rotation = ShotSpawn1.transform.rotation;
     }
 }
 
