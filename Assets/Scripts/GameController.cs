@@ -67,16 +67,16 @@ public class GameController : MonoBehaviour {
 
     void SpawnMediumEnemy(Player player)
     {
-
+        float random = Random.Range(0, 2) >= 0.5 ? 1 : -1; 
         GameObject enemyMediumUnit = Instantiate(MediumEnemy);
         if (player.Equals(Player.right))
         {
-            enemyMediumUnit.transform.position = new Vector2(5, Random.Range(-2.5f, 2.5f));
+            enemyMediumUnit.transform.position = new Vector2(5, 3.5f * random);
             enemyMediumUnit.GetComponent<MediumEnemyControl>().player = Player.right;
         }
         else
         {
-            enemyMediumUnit.transform.position = new Vector2(-5, Random.Range(-2.5f, 2.5f));
+            enemyMediumUnit.transform.position = new Vector2(-5, 3.5f * random);
             enemyMediumUnit.GetComponent<MediumEnemyControl>().player = Player.left;
         }
 
