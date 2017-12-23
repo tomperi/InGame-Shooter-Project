@@ -19,9 +19,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4518767699377272}
-  - component: {fileID: 114494066076825708}
   - component: {fileID: 212958497374973386}
   - component: {fileID: 61130376721013914}
+  - component: {fileID: 114691604027717176}
   m_Layer: 0
   m_Name: Wall
   m_TagString: Untagged
@@ -67,7 +67,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 10.8}
   m_EdgeRadius: 0
---- !u!114 &114494066076825708
+--- !u!114 &114691604027717176
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -75,7 +75,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1749921341486076}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8af39286d1d394c2fb5ff1e5d65a3ed1, type: 3}
+  m_Script: {fileID: 11500000, guid: da756aa39889c214ea26e31e4b955903, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   move: 0.1
@@ -115,7 +115,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: aeb4824e0a1c04a56869706ba73b945d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b5852376c38878a49ad884827c1fbdd5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

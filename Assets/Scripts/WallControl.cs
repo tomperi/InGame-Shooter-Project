@@ -14,15 +14,16 @@ public class WallControl : MonoBehaviour {
 
 		Player player = other.GetComponent<EnemyControl> ().player;
 		if (player.Equals(Player.right))
-		{
-			pos.x -= move;
-			posPlayerLeft.x -= move;
-			posPlayerRight.x -= move;
-			} else {
-			pos.x += move;
-			posPlayerLeft.x += move;
-			posPlayerRight.x += move;
-		}
+        {
+            pos.x += move;
+            posPlayerLeft.x += move;
+            posPlayerRight.x += move;
+        } else
+        {
+            pos.x -= move;
+            posPlayerLeft.x -= move;
+            posPlayerRight.x -= move;
+        }
 			
 		transform.position = pos;
 		rightPlayer.transform.position = posPlayerRight;
