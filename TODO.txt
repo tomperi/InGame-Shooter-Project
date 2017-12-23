@@ -1,0 +1,11 @@
+[] Stop player from rotating 360
+[] Move wall when player hits a spaceship
+[] Enemy scripts - 
+	[] Hard enemy
+[] Add wave manager to the game controller
+[] 
+[] Opening screen
+[] Win/lose criteria + end screen
+[] Score?
+[] Combo?
+[] Score + combo = mana
