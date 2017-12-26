@@ -43,6 +43,9 @@ public class BasicEnemy : MonoBehaviour {
         position = new Vector2(position.x - enemyStats.speed * Time.deltaTime, position.y);
 
         transform.position = position;
+
+        if (enemyStats.hp < 1)
+            Destroy(this.gameObject);
     }
 
 }

@@ -102,5 +102,14 @@ public class PlayerControl : MonoBehaviour
         bullet2.transform.position = ShotSpawn2.transform.position;
         bullet2.transform.rotation = ShotSpawn1.transform.rotation;
     }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag != "Shot")
+        {
+            Debug.Log("Player destroy " + other.name);
+            Destroy(other.gameObject);
+        }
+    }
 }
 
