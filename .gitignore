@@ -26,6 +26,9 @@ ExportedObj/
 *.svd
 *.pdb
 
+// ignore git attributes
+.gitattributes
+
 .git*
 # Unity3D generated meta files
 *.pidb.meta
