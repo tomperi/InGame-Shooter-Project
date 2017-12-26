@@ -11,12 +11,12 @@ public class EnemyControl : MonoBehaviour {
     {
         if (player.Equals(Player.right))
         {
-
+            transform.eulerAngles = new Vector3(0, 0, -90);
         }
         else
         {
             speed *= -1;
-            transform.rotation *= Quaternion.Euler(0, 0, 180f);
+            transform.eulerAngles = new Vector3(0, 0, 90);
         }
     }
 	

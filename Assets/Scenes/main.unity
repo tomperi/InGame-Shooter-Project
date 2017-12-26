@@ -112,6 +112,67 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &358306753
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 358306755}
+  - component: {fileID: 358306754}
+  m_Layer: 0
+  m_Name: AgassiGameController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &358306754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 358306753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fc6676a816f14141ade8b381f11cc13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waves:
+  - name: First
+    enemies:
+    - {fileID: 114891987757470824, guid: db91d37ade3525a45a6594d7bfe86d11, type: 2}
+    enemyCount: 05000000
+    rate: 0.3
+    maxSpeed: 3
+  - name: Second
+    enemies:
+    - {fileID: 114891987757470824, guid: db91d37ade3525a45a6594d7bfe86d11, type: 2}
+    enemyCount: 0a000000
+    rate: 0.3
+    maxSpeed: 3
+  - name: Third
+    enemies:
+    - {fileID: 114891987757470824, guid: db91d37ade3525a45a6594d7bfe86d11, type: 2}
+    enemyCount: 14000000
+    rate: 0.3
+    maxSpeed: 3
+  timeBetweenWaves: 5
+  waveCountdown: 0
+--- !u!4 &358306755
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 358306753}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.48462144, y: -0.13089344, z: -0.0859375}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &560093768
 GameObject:
   m_ObjectHideFlags: 0
@@ -142,7 +203,7 @@ MonoBehaviour:
   Enemy: {fileID: 1232052788086694, guid: 7defb2b794a6dff4ca2e5a3c0cfe8368, type: 2}
   MediumEnemy: {fileID: 0}
   maxSpawnRate: 3
-  startSpawn: 1
+  startSpawn: 0
 --- !u!4 &560093770
 Transform:
   m_ObjectHideFlags: 0
@@ -161,6 +222,21 @@ GameObject:
   m_PrefabParentObject: {fileID: 1476735759618650, guid: 6f148c6241ed6b84582bac02f6b170f9,
     type: 2}
   m_PrefabInternal: {fileID: 1397765308}
+--- !u!58 &756881419
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 756881414}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.3600001
 --- !u!1 &1281497840
 GameObject:
   m_ObjectHideFlags: 0
@@ -398,6 +474,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114448905256083174, guid: 6f148c6241ed6b84582bac02f6b170f9,
+        type: 2}
+      propertyPath: maxAngle
+      value: 45
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6f148c6241ed6b84582bac02f6b170f9, type: 2}
   m_IsPrefabParent: 0
@@ -439,6 +520,15 @@ Prefab:
     - target: {fileID: 4561147026337420, guid: 13623cc4760b567409932dc1504ac8ca, type: 2}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4561147026337420, guid: 13623cc4760b567409932dc1504ac8ca, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 114315328400844626, guid: 13623cc4760b567409932dc1504ac8ca,
+        type: 2}
+      propertyPath: maxAngle
+      value: 45
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 13623cc4760b567409932dc1504ac8ca, type: 2}

@@ -12,10 +12,12 @@ public class PlayerControl : MonoBehaviour
     public GameObject ShotSpawn2;
     public Player player;
     public float speed, rotateSpeed;
+    public float maxAngle;
     public bool dock;
 
     private string verticalAxis, horizontalAxis, fire;
     private Vector2 min, max;
+    private float maxAngleUp, maxAngleDown, defaultAngle;
     
 
 	// Use this for initialization
@@ -25,12 +27,19 @@ public class PlayerControl : MonoBehaviour
             verticalAxis = "RightVertical";
             horizontalAxis = "RightHorizontal";
             fire = "right ctrl";
+            defaultAngle = -90;
+            maxAngleUp = defaultAngle - maxAngle;
+            maxAngleDown = defaultAngle + maxAngle;
         } else
         {
             verticalAxis = "LeftVertical";
             horizontalAxis = "LeftHorizontal";
             fire = "left ctrl";
+            defaultAngle = 90;
+            maxAngleUp = defaultAngle - maxAngle;
+            maxAngleDown = defaultAngle + maxAngle;
         }
+        Debug.Log(player + " " + maxAngleUp + " " + maxAngleDown);
 	}
 	
 	// Update is called once per frame
@@ -77,7 +86,10 @@ public class PlayerControl : MonoBehaviour
 
     void Rotate(float rotate)
     {
-        transform.Rotate(new Vector3(0, 0, rotate * rotateSpeed *-1));
+        defaultAngle += rotate * rotateSpeed *-1;
+        defaultAngle = Mathf.Clamp(defaultAngle, maxAngleUp, maxAngleDown);
+        transform.eulerAngles = new Vector3(0, 0, defaultAngle);
+        // transform.Rotate(new Vector3(0, 0, rotate * rotateSpeed * -1));
     }
 
     void Shot()

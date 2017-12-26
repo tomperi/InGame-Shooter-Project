@@ -7,28 +7,46 @@ public class WallControl : MonoBehaviour {
 	public GameObject rightPlayer, leftPlayer;
 
 
-	void OnTriggerEnter2D(Collider2D other) {
-		Vector2 pos = transform.position;
-		Vector2 posPlayerRight = rightPlayer.transform.position;
-		Vector2 posPlayerLeft = leftPlayer.transform.position;
+    Vector2 pos, posPlayerRight, posPlayerLeft;
 
-		Player player = other.GetComponent<EnemyControl> ().player;
+    void OnTriggerEnter2D(Collider2D other) {
+
+        pos = transform.position;
+        posPlayerRight = rightPlayer.transform.position;
+        posPlayerLeft = leftPlayer.transform.position;
+
+        //Player player = other.GetComponent<EnemyControl> ().player;
+        Player player = other.GetComponent<BasicEnemy>().enemyStats.player;
 		if (player.Equals(Player.right))
         {
-            pos.x += move;
-            posPlayerLeft.x += move;
-            posPlayerRight.x += move;
+            moveWallRight();
         } else
         {
-            pos.x -= move;
-            posPlayerLeft.x -= move;
-            posPlayerRight.x -= move;
+            moveWallLeft();
         }
-			
-		transform.position = pos;
-		rightPlayer.transform.position = posPlayerRight;
-		leftPlayer.transform.position = posPlayerLeft;
 				
 		Destroy(other.gameObject);
 	}
+
+    void moveWallLeft()
+    {
+        pos.x += move;
+        posPlayerLeft.x += move;
+        posPlayerRight.x += move;
+
+        transform.position = pos;
+        rightPlayer.transform.position = posPlayerRight;
+        leftPlayer.transform.position = posPlayerLeft;
+    }
+
+    void moveWallRight()
+    {
+        pos.x -= move;
+        posPlayerLeft.x -= move;
+        posPlayerRight.x -= move;
+
+        transform.position = pos;
+        rightPlayer.transform.position = posPlayerRight;
+        leftPlayer.transform.position = posPlayerLeft;
+    }
 }
