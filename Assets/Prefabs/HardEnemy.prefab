@@ -9,65 +9,49 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1910707226885422}
+  m_RootGameObject: {fileID: 1050282788800370}
   m_IsPrefabParent: 1
---- !u!1 &1910707226885422
+--- !u!1 &1050282788800370
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4525658271042426}
-  - component: {fileID: 212194403560170444}
-  - component: {fileID: 95101683966322568}
-  - component: {fileID: 114244152261671596}
-  - component: {fileID: 70583367737663650}
+  - component: {fileID: 4625493835031680}
+  - component: {fileID: 212995083916850762}
+  - component: {fileID: 95835409489864534}
+  - component: {fileID: 114630097433382052}
   m_Layer: 0
-  m_Name: MediumEnemy
+  m_Name: HardEnemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4525658271042426
+--- !u!4 &4625493835031680
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1910707226885422}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.34, y: 2.5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_GameObject: {fileID: 1050282788800370}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 6.97, y: 0, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!70 &70583367737663650
-CapsuleCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1910707226885422}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.4, y: 0.4}
-  m_Direction: 0
---- !u!95 &95101683966322568
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+--- !u!95 &95835409489864534
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1910707226885422}
+  m_GameObject: {fileID: 1050282788800370}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 689ad4ef133526b4db5115d8b3eccc69, type: 2}
+  m_Controller: {fileID: 9100000, guid: 3c175d303a094dd4f9afb9342abf8a6b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -75,31 +59,27 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114244152261671596
+--- !u!114 &114630097433382052
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1910707226885422}
+  m_GameObject: {fileID: 1050282788800370}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 580be5e3a4b08d44cba0e8e286a8bdca, type: 3}
+  m_Script: {fileID: 11500000, guid: c5ae8fdc43dc925428e3b9a0be4b6cd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MHP: 0
-  EHP: 0
-  direction: 1
-  movementSpeed: 1
-  down: 0
+  speed: 0.1
+  missle: {fileID: 1235403507281516, guid: 51738a4e0202d794dab1251c8a48855b, type: 2}
   player: 0
-  p_easyenemy: {fileID: 1537690434613730, guid: db91d37ade3525a45a6594d7bfe86d11,
-    type: 2}
---- !u!212 &212194403560170444
+  HP: 10
+--- !u!212 &212995083916850762
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1910707226885422}
+  m_GameObject: {fileID: 1050282788800370}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -128,7 +108,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300012, guid: 8d18f6d2b73e89b4882fbf3bb5aedb4b, type: 3}
+  m_Sprite: {fileID: 21300072, guid: 8d18f6d2b73e89b4882fbf3bb5aedb4b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
