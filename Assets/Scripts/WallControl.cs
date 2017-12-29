@@ -19,10 +19,10 @@ public class WallControl : MonoBehaviour {
         Player player = other.GetComponent<BasicEnemy>().enemyStats.player;
 		if (player.Equals(Player.right))
         {
-            moveWallRight();
+            moveWallLeft();
         } else
         {
-            moveWallLeft();
+            moveWallRight();
         }
 				
 		Destroy(other.gameObject);

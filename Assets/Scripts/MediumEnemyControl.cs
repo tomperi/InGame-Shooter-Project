@@ -79,7 +79,7 @@ public class MediumEnemyControl : MonoBehaviour {
 
         GameObject EasyEnemy = Instantiate(
          p_easyenemy, this.transform.position, Quaternion.identity);
-        EasyEnemy.GetComponent<EnemyControl>().player = this.player;
+        EasyEnemy.GetComponent<BasicEnemy>().enemyStats.player = this.player;
     }
 
 }
