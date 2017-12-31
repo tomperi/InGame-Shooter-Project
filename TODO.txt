@@ -1,11 +1,44 @@
-[] Stop player from rotating 360
-[] Move wall when player hits a spaceship
-[] Enemy scripts - 
-	[] Hard enemy
-[] Add wave manager to the game controller
-[] 
-[] Opening screen
-[] Win/lose criteria + end screen
-[] Score?
-[] Combo?
-[] Score + combo = mana
+Sprites
+	Implement enemy sprites
+	Implement player sprites (add another gameobject for the staff, change shot spawn location)
+	
+General Scripting
+	Change all enemy scripts so they inherit from BasicEnemy
+	Add explosion after enemy destruction
+
+Medium enemy
+	Add max of shots, then destroy (if == 0, keep firing forever)
+	Add fire rate
+
+Large enemy
+	Set stopping point (distance from the wall)
+	Change missle speed/quantity in game editor
+	Add shield (use 2 colliders)
+	Spawn missles from a different position (shot spawn mechanism)
+
+Missles
+	Face towards player
+
+Scenes
+	Opening screen
+	Ending screen?
+	Credits
+
+Texts
+	Control to fire
+	You can now undock
+	Player 1/2 wins!
+
+Instruction mode 
+	Implement instruction text  
+	
+UX/UI
+	Bravery meter?
+	ESC to pause (esc again to quit to main scene)
+
+Features
+	Bonus - spawn at edge of screen, move towards player (player has to touch it)
+			
+Scenematics
+	Intro - move the menu, place wall, then drop players
+	Lose cinematics

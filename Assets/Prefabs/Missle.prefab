@@ -71,7 +71,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   p_target: {fileID: 0}
-  speed: 0
+  speed: 5
   HP: 0
 --- !u!212 &212238519501820314
 SpriteRenderer:
