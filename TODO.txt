@@ -1,15 +1,27 @@
 Sprites
 	Implement enemy sprites
+		Easy
+		Medium
+		Hard
 	Implement player sprites (add another gameobject for the staff, change shot spawn location)
-	
+		Left Player
+		Right Player
+	Enviroment
+[DONE]		Background
+		Wall
+	Manage sorting layers [WIP]
+
+Wave Spawner
+[DONE]	Spawn each type of enemy in its right place
+
 General Scripting
-	Change all enemy scripts so they inherit from BasicEnemy
+[DONE]	Change all enemy scripts so they inherit from BasicEnemy 
 	Add explosion after enemy destruction
 
 Medium enemy
-	Add max of shots, then destroy (if == 0, keep firing forever)
-	Add fire rate
-
+[DONE]	Add max of shots, then destroy (if == 0, keep firing forever)
+[DONE]	Add fire rate
+	
 Large enemy
 	Set stopping point (distance from the wall)
 	Change missle speed/quantity in game editor
@@ -28,6 +40,11 @@ Texts
 	Control to fire
 	You can now undock
 	Player 1/2 wins!
+
+Player 
+	Move wall when enemies hit the player	
+	Fix player rotation script
+	Fix shotting direction (add +-90 degree to the fire)
 
 Instruction mode 
 	Implement instruction text  
