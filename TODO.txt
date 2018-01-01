@@ -43,6 +43,7 @@ Texts
 
 Player 
 	Move wall when enemies hit the player	
+	Limit player movement top/bottom (can now overflow from screen). Limit the small enemy spawn accordingly.
 [DONE]	Fix player rotation script
 [DONE]	Fix shotting direction (add +-90 degree to the fire)
 
