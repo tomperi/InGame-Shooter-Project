@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 05c41291031d40643b385b99a054f8ea
-timeCreated: 1514761518
+timeCreated: 1514814867
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -138,11 +138,43 @@ TextureImporter:
         y: 1780
         width: 254
         height: 268
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
+      outline:
+      - - {x: 83, y: 117}
+        - {x: 79, y: 108}
+        - {x: 75, y: 26}
+        - {x: 75, y: -67}
+        - {x: 87, y: -67}
+        - {x: 119, y: 62}
+        - {x: 119, y: 96}
+        - {x: 95, y: 117}
+      - - {x: 90, y: 89}
+        - {x: 87, y: 88}
+        - {x: 87, y: 72}
+        - {x: 93, y: 69}
+        - {x: 100, y: 69}
+        - {x: 103, y: 73}
+        - {x: 103, y: 85}
+        - {x: 101, y: 89}
+      physicsShape:
+      - - {x: 83, y: 117}
+        - {x: 79, y: 108}
+        - {x: 75, y: 26}
+        - {x: 75, y: -67}
+        - {x: 87, y: -67}
+        - {x: 119, y: 62}
+        - {x: 119, y: 96}
+        - {x: 95, y: 117}
+      - - {x: 90, y: 89}
+        - {x: 87, y: 88}
+        - {x: 87, y: 72}
+        - {x: 93, y: 69}
+        - {x: 100, y: 69}
+        - {x: 103, y: 73}
+        - {x: 103, y: 85}
+        - {x: 101, y: 89}
       tessellationDetail: 0
     - serializedVersion: 2
       name: HeroL_Weapon_1
@@ -152,11 +184,45 @@ TextureImporter:
         y: 1780
         width: 254
         height: 268
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
+      outline:
+      - - {x: 83, y: 117}
+        - {x: 80, y: 108}
+        - {x: 84, y: 87}
+        - {x: 75, y: -5}
+        - {x: 75, y: -67}
+        - {x: 88, y: -67}
+        - {x: 119, y: 57}
+        - {x: 119, y: 97}
+        - {x: 95, y: 117}
+      - - {x: 90, y: 89}
+        - {x: 87, y: 88}
+        - {x: 87, y: 72}
+        - {x: 93, y: 69}
+        - {x: 100, y: 69}
+        - {x: 103, y: 73}
+        - {x: 103, y: 85}
+        - {x: 101, y: 89}
+      physicsShape:
+      - - {x: 83, y: 117}
+        - {x: 80, y: 108}
+        - {x: 84, y: 87}
+        - {x: 75, y: -5}
+        - {x: 75, y: -67}
+        - {x: 88, y: -67}
+        - {x: 119, y: 57}
+        - {x: 119, y: 97}
+        - {x: 95, y: 117}
+      - - {x: 90, y: 89}
+        - {x: 87, y: 88}
+        - {x: 87, y: 72}
+        - {x: 93, y: 69}
+        - {x: 100, y: 69}
+        - {x: 103, y: 73}
+        - {x: 103, y: 85}
+        - {x: 101, y: 89}
       tessellationDetail: 0
     - serializedVersion: 2
       name: HeroL_Weapon_2
@@ -166,11 +232,51 @@ TextureImporter:
         y: 1780
         width: 254
         height: 268
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
+      outline:
+      - - {x: 88, y: 121}
+        - {x: 86, y: 120}
+        - {x: 87, y: 95}
+        - {x: 89, y: 93}
+        - {x: 99, y: 93}
+        - {x: 92, y: 91}
+        - {x: 86, y: 84}
+        - {x: 86, y: 74}
+        - {x: 92, y: 68}
+        - {x: 97, y: 69}
+        - {x: 99, y: 71}
+        - {x: 99, y: 69}
+        - {x: 97, y: 69}
+        - {x: 87, y: 67}
+        - {x: 75, y: 46}
+        - {x: 75, y: -63}
+        - {x: 92, y: -63}
+        - {x: 115, y: 64}
+        - {x: 115, y: 103}
+        - {x: 97, y: 121}
+      physicsShape:
+      - - {x: 88, y: 121}
+        - {x: 86, y: 120}
+        - {x: 87, y: 95}
+        - {x: 89, y: 93}
+        - {x: 99, y: 93}
+        - {x: 92, y: 91}
+        - {x: 86, y: 84}
+        - {x: 86, y: 74}
+        - {x: 92, y: 68}
+        - {x: 97, y: 69}
+        - {x: 99, y: 71}
+        - {x: 99, y: 69}
+        - {x: 97, y: 69}
+        - {x: 87, y: 67}
+        - {x: 75, y: 46}
+        - {x: 75, y: -63}
+        - {x: 92, y: -63}
+        - {x: 115, y: 64}
+        - {x: 115, y: 103}
+        - {x: 97, y: 121}
       tessellationDetail: 0
     - serializedVersion: 2
       name: HeroL_Weapon_3
@@ -180,11 +286,25 @@ TextureImporter:
         y: 1780
         width: 254
         height: 268
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
+      outline:
+      - - {x: 83, y: 125}
+        - {x: 75, y: 67}
+        - {x: 75, y: -63}
+        - {x: 87, y: -63}
+        - {x: 111, y: 48}
+        - {x: 111, y: 111}
+        - {x: 102, y: 125}
+      physicsShape:
+      - - {x: 83, y: 125}
+        - {x: 75, y: 67}
+        - {x: 75, y: -63}
+        - {x: 87, y: -63}
+        - {x: 111, y: 48}
+        - {x: 111, y: 111}
+        - {x: 102, y: 125}
       tessellationDetail: 0
     - serializedVersion: 2
       name: HeroL_Weapon_4
@@ -194,11 +314,23 @@ TextureImporter:
         y: 1780
         width: 254
         height: 268
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
+      outline:
+      - - {x: 75, y: 125}
+        - {x: 75, y: -63}
+        - {x: 85, y: -63}
+        - {x: 107, y: 16}
+        - {x: 107, y: 118}
+        - {x: 106, y: 125}
+      physicsShape:
+      - - {x: 75, y: 125}
+        - {x: 75, y: -63}
+        - {x: 85, y: -63}
+        - {x: 107, y: 16}
+        - {x: 107, y: 118}
+        - {x: 106, y: 125}
       tessellationDetail: 0
     - serializedVersion: 2
       name: HeroL_Weapon_5
@@ -208,11 +340,27 @@ TextureImporter:
         y: 1780
         width: 254
         height: 268
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
+      outline:
+      - - {x: 91, y: 125}
+        - {x: 85, y: 116}
+        - {x: 75, y: 16}
+        - {x: 75, y: -63}
+        - {x: 88, y: -63}
+        - {x: 103, y: 12}
+        - {x: 103, y: 118}
+        - {x: 102, y: 125}
+      physicsShape:
+      - - {x: 91, y: 125}
+        - {x: 85, y: 116}
+        - {x: 75, y: 16}
+        - {x: 75, y: -63}
+        - {x: 88, y: -63}
+        - {x: 103, y: 12}
+        - {x: 103, y: 118}
+        - {x: 102, y: 125}
       tessellationDetail: 0
     - serializedVersion: 2
       name: HeroL_Weapon_6
@@ -222,11 +370,23 @@ TextureImporter:
         y: 1780
         width: 254
         height: 268
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
+      outline:
+      - - {x: 87, y: 125}
+        - {x: 75, y: 58}
+        - {x: 75, y: -63}
+        - {x: 87, y: -63}
+        - {x: 99, y: -5}
+        - {x: 99, y: 125}
+      physicsShape:
+      - - {x: 87, y: 125}
+        - {x: 75, y: 58}
+        - {x: 75, y: -63}
+        - {x: 87, y: -63}
+        - {x: 99, y: -5}
+        - {x: 99, y: 125}
       tessellationDetail: 0
     - serializedVersion: 2
       name: HeroL_Weapon_7
@@ -236,11 +396,31 @@ TextureImporter:
         y: 1780
         width: 254
         height: 268
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
+      outline:
+      - - {x: 103, y: 121}
+        - {x: 95, y: 121}
+        - {x: 94, y: 120}
+        - {x: 78, y: 97}
+        - {x: 75, y: 46}
+        - {x: 75, y: -67}
+        - {x: 83, y: -67}
+        - {x: 89, y: -54}
+        - {x: 100, y: 31}
+        - {x: 103, y: 79}
+      physicsShape:
+      - - {x: 103, y: 121}
+        - {x: 95, y: 121}
+        - {x: 94, y: 120}
+        - {x: 78, y: 97}
+        - {x: 75, y: 46}
+        - {x: 75, y: -67}
+        - {x: 83, y: -67}
+        - {x: 89, y: -54}
+        - {x: 100, y: 31}
+        - {x: 103, y: 79}
       tessellationDetail: 0
     - serializedVersion: 2
       name: HeroL_Weapon_8
@@ -250,11 +430,25 @@ TextureImporter:
         y: 1512
         width: 254
         height: 268
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
+      outline:
+      - - {x: 87, y: 117}
+        - {x: 75, y: 112}
+        - {x: 75, y: -67}
+        - {x: 84, y: -67}
+        - {x: 93, y: -55}
+        - {x: 107, y: 65}
+        - {x: 107, y: 117}
+      physicsShape:
+      - - {x: 87, y: 117}
+        - {x: 75, y: 112}
+        - {x: 75, y: -67}
+        - {x: 84, y: -67}
+        - {x: 93, y: -55}
+        - {x: 107, y: 65}
+        - {x: 107, y: 117}
       tessellationDetail: 0
     - serializedVersion: 2
       name: HeroL_Weapon_9
@@ -264,11 +458,37 @@ TextureImporter:
         y: 1512
         width: 254
         height: 268
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
+      outline:
+      - - {x: 91, y: 65}
+        - {x: 91, y: 69}
+        - {x: 92, y: 65}
+        - {x: 98, y: 64}
+        - {x: 111, y: 65}
+        - {x: 111, y: 117}
+        - {x: 91, y: 117}
+        - {x: 75, y: 110}
+        - {x: 75, y: -67}
+        - {x: 83, y: -67}
+        - {x: 89, y: -54}
+        - {x: 105, y: 60}
+        - {x: 93, y: 65}
+      physicsShape:
+      - - {x: 91, y: 65}
+        - {x: 91, y: 69}
+        - {x: 92, y: 65}
+        - {x: 98, y: 64}
+        - {x: 111, y: 65}
+        - {x: 111, y: 117}
+        - {x: 91, y: 117}
+        - {x: 75, y: 110}
+        - {x: 75, y: -67}
+        - {x: 83, y: -67}
+        - {x: 89, y: -54}
+        - {x: 105, y: 60}
+        - {x: 93, y: 65}
       tessellationDetail: 0
     - serializedVersion: 2
       name: HeroL_Weapon_10
@@ -278,11 +498,39 @@ TextureImporter:
         y: 1512
         width: 254
         height: 268
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
+      outline:
+      - - {x: 101, y: 117}
+        - {x: 71, y: 93}
+        - {x: 71, y: -49}
+        - {x: 75, y: -67}
+        - {x: 111, y: -67}
+        - {x: 111, y: 117}
+      - - {x: 90, y: 85}
+        - {x: 87, y: 84}
+        - {x: 87, y: 68}
+        - {x: 93, y: 65}
+        - {x: 100, y: 65}
+        - {x: 103, y: 69}
+        - {x: 103, y: 81}
+        - {x: 101, y: 85}
+      physicsShape:
+      - - {x: 101, y: 117}
+        - {x: 71, y: 93}
+        - {x: 71, y: -49}
+        - {x: 75, y: -67}
+        - {x: 111, y: -67}
+        - {x: 111, y: 117}
+      - - {x: 90, y: 85}
+        - {x: 87, y: 84}
+        - {x: 87, y: 68}
+        - {x: 93, y: 65}
+        - {x: 100, y: 65}
+        - {x: 103, y: 69}
+        - {x: 103, y: 81}
+        - {x: 101, y: 85}
       tessellationDetail: 0
     - serializedVersion: 2
       name: HeroL_Weapon_11
@@ -292,11 +540,53 @@ TextureImporter:
         y: 1512
         width: 254
         height: 268
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
+      outline:
+      - - {x: 89, y: 57}
+        - {x: 88, y: 60}
+        - {x: 111, y: 85}
+        - {x: 111, y: 112}
+        - {x: 109, y: 113}
+        - {x: 99, y: 113}
+        - {x: 71, y: 100}
+        - {x: 71, y: -24}
+        - {x: 74, y: -71}
+        - {x: 83, y: -71}
+        - {x: 91, y: -58}
+        - {x: 101, y: 56}
+        - {x: 97, y: 57}
+      - - {x: 90, y: 81}
+        - {x: 87, y: 80}
+        - {x: 87, y: 64}
+        - {x: 93, y: 61}
+        - {x: 100, y: 61}
+        - {x: 103, y: 65}
+        - {x: 103, y: 77}
+        - {x: 101, y: 81}
+      physicsShape:
+      - - {x: 89, y: 57}
+        - {x: 88, y: 60}
+        - {x: 111, y: 85}
+        - {x: 111, y: 112}
+        - {x: 109, y: 113}
+        - {x: 99, y: 113}
+        - {x: 71, y: 100}
+        - {x: 71, y: -24}
+        - {x: 74, y: -71}
+        - {x: 83, y: -71}
+        - {x: 91, y: -58}
+        - {x: 101, y: 56}
+        - {x: 97, y: 57}
+      - - {x: 90, y: 81}
+        - {x: 87, y: 80}
+        - {x: 87, y: 64}
+        - {x: 93, y: 61}
+        - {x: 100, y: 61}
+        - {x: 103, y: 65}
+        - {x: 103, y: 77}
+        - {x: 101, y: 81}
       tessellationDetail: 0
     - serializedVersion: 2
       name: HeroL_Weapon_12
@@ -306,11 +596,53 @@ TextureImporter:
         y: 1512
         width: 254
         height: 268
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
+      outline:
+      - - {x: 89, y: 57}
+        - {x: 88, y: 60}
+        - {x: 108, y: 74}
+        - {x: 111, y: 82}
+        - {x: 111, y: 113}
+        - {x: 99, y: 113}
+        - {x: 68, y: 88}
+        - {x: 67, y: 81}
+        - {x: 67, y: -5}
+        - {x: 71, y: -71}
+        - {x: 84, y: -71}
+        - {x: 92, y: -59}
+        - {x: 102, y: 57}
+      - - {x: 90, y: 81}
+        - {x: 87, y: 80}
+        - {x: 87, y: 64}
+        - {x: 93, y: 61}
+        - {x: 100, y: 61}
+        - {x: 103, y: 65}
+        - {x: 103, y: 77}
+        - {x: 101, y: 81}
+      physicsShape:
+      - - {x: 89, y: 57}
+        - {x: 88, y: 60}
+        - {x: 108, y: 74}
+        - {x: 111, y: 82}
+        - {x: 111, y: 113}
+        - {x: 99, y: 113}
+        - {x: 68, y: 88}
+        - {x: 67, y: 81}
+        - {x: 67, y: -5}
+        - {x: 71, y: -71}
+        - {x: 84, y: -71}
+        - {x: 92, y: -59}
+        - {x: 102, y: 57}
+      - - {x: 90, y: 81}
+        - {x: 87, y: 80}
+        - {x: 87, y: 64}
+        - {x: 93, y: 61}
+        - {x: 100, y: 61}
+        - {x: 103, y: 65}
+        - {x: 103, y: 77}
+        - {x: 101, y: 81}
       tessellationDetail: 0
     - serializedVersion: 2
       name: HeroL_Weapon_13
@@ -320,11 +652,39 @@ TextureImporter:
         y: 1512
         width: 254
         height: 268
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
+      outline:
+      - - {x: 71, y: -71}
+        - {x: 83, y: -71}
+        - {x: 111, y: -10}
+        - {x: 111, y: 117}
+        - {x: 86, y: 117}
+        - {x: 71, y: 106}
+      - - {x: 90, y: 81}
+        - {x: 87, y: 80}
+        - {x: 87, y: 64}
+        - {x: 93, y: 61}
+        - {x: 100, y: 61}
+        - {x: 103, y: 65}
+        - {x: 103, y: 77}
+        - {x: 101, y: 81}
+      physicsShape:
+      - - {x: 71, y: -71}
+        - {x: 83, y: -71}
+        - {x: 111, y: -10}
+        - {x: 111, y: 117}
+        - {x: 86, y: 117}
+        - {x: 71, y: 106}
+      - - {x: 90, y: 81}
+        - {x: 87, y: 80}
+        - {x: 87, y: 64}
+        - {x: 93, y: 61}
+        - {x: 100, y: 61}
+        - {x: 103, y: 65}
+        - {x: 103, y: 77}
+        - {x: 101, y: 81}
       tessellationDetail: 0
     - serializedVersion: 2
       name: HeroL_Weapon_14
@@ -334,11 +694,23 @@ TextureImporter:
         y: 1512
         width: 254
         height: 268
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
+      outline:
+      - - {x: 97, y: 117}
+        - {x: 75, y: 106}
+        - {x: 75, y: -67}
+        - {x: 87, y: -67}
+        - {x: 107, y: 28}
+        - {x: 107, y: 117}
+      physicsShape:
+      - - {x: 97, y: 117}
+        - {x: 75, y: 106}
+        - {x: 75, y: -67}
+        - {x: 87, y: -67}
+        - {x: 107, y: 28}
+        - {x: 107, y: 117}
       tessellationDetail: 0
     - serializedVersion: 2
       name: HeroL_Weapon_15
@@ -348,11 +720,23 @@ TextureImporter:
         y: 1512
         width: 254
         height: 268
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
+      outline:
+      - - {x: 80, y: 121}
+        - {x: 75, y: 103}
+        - {x: 75, y: -67}
+        - {x: 87, y: -67}
+        - {x: 107, y: 28}
+        - {x: 107, y: 121}
+      physicsShape:
+      - - {x: 80, y: 121}
+        - {x: 75, y: 103}
+        - {x: 75, y: -67}
+        - {x: 87, y: -67}
+        - {x: 107, y: 28}
+        - {x: 107, y: 121}
       tessellationDetail: 0
     - serializedVersion: 2
       name: HeroL_Weapon_16
@@ -362,11 +746,23 @@ TextureImporter:
         y: 1244
         width: 254
         height: 268
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
+      outline:
+      - - {x: 75, y: -67}
+        - {x: 88, y: -67}
+        - {x: 107, y: -17}
+        - {x: 107, y: 121}
+        - {x: 95, y: 121}
+        - {x: 75, y: 107}
+      physicsShape:
+      - - {x: 75, y: -67}
+        - {x: 88, y: -67}
+        - {x: 107, y: -17}
+        - {x: 107, y: 121}
+        - {x: 95, y: 121}
+        - {x: 75, y: 107}
       tessellationDetail: 0
     - serializedVersion: 2
       name: HeroL_Weapon_17
@@ -376,11 +772,25 @@ TextureImporter:
         y: 1244
         width: 254
         height: 268
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
+      outline:
+      - - {x: 77, y: 117}
+        - {x: 75, y: 108}
+        - {x: 75, y: -71}
+        - {x: 85, y: -71}
+        - {x: 99, y: -60}
+        - {x: 103, y: 16}
+        - {x: 103, y: 117}
+      physicsShape:
+      - - {x: 77, y: 117}
+        - {x: 75, y: 108}
+        - {x: 75, y: -71}
+        - {x: 85, y: -71}
+        - {x: 99, y: -60}
+        - {x: 103, y: 16}
+        - {x: 103, y: 117}
       tessellationDetail: 0
     - serializedVersion: 2
       name: HeroL_Weapon_18
@@ -390,11 +800,25 @@ TextureImporter:
         y: 1244
         width: 254
         height: 268
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
+      outline:
+      - - {x: 93, y: 121}
+        - {x: 77, y: 93}
+        - {x: 75, y: 51}
+        - {x: 75, y: -71}
+        - {x: 97, y: -71}
+        - {x: 103, y: -9}
+        - {x: 103, y: 121}
+      physicsShape:
+      - - {x: 93, y: 121}
+        - {x: 77, y: 93}
+        - {x: 75, y: 51}
+        - {x: 75, y: -71}
+        - {x: 97, y: -71}
+        - {x: 103, y: -9}
+        - {x: 103, y: 121}
       tessellationDetail: 0
     - serializedVersion: 2
       name: HeroL_Weapon_19
@@ -404,11 +828,27 @@ TextureImporter:
         y: 1244
         width: 254
         height: 268
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
+      outline:
+      - - {x: 104, y: 121}
+        - {x: 79, y: 121}
+        - {x: 75, y: 104}
+        - {x: 75, y: -71}
+        - {x: 83, y: -71}
+        - {x: 89, y: -58}
+        - {x: 107, y: 28}
+        - {x: 107, y: 114}
+      physicsShape:
+      - - {x: 104, y: 121}
+        - {x: 79, y: 121}
+        - {x: 75, y: 104}
+        - {x: 75, y: -71}
+        - {x: 83, y: -71}
+        - {x: 89, y: -58}
+        - {x: 107, y: 28}
+        - {x: 107, y: 114}
       tessellationDetail: 0
     - serializedVersion: 2
       name: HeroL_Weapon_20
@@ -418,11 +858,25 @@ TextureImporter:
         y: 1244
         width: 254
         height: 268
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
+      outline:
+      - - {x: 87, y: 121}
+        - {x: 75, y: 46}
+        - {x: 75, y: -67}
+        - {x: 85, y: -67}
+        - {x: 107, y: 4}
+        - {x: 107, y: 117}
+        - {x: 106, y: 121}
+      physicsShape:
+      - - {x: 87, y: 121}
+        - {x: 75, y: 46}
+        - {x: 75, y: -67}
+        - {x: 85, y: -67}
+        - {x: 107, y: 4}
+        - {x: 107, y: 117}
+        - {x: 106, y: 121}
       tessellationDetail: 0
     - serializedVersion: 2
       name: HeroL_Weapon_21
@@ -432,11 +886,27 @@ TextureImporter:
         y: 1244
         width: 254
         height: 268
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
+      outline:
+      - - {x: 90, y: 121}
+        - {x: 78, y: 100}
+        - {x: 75, y: 43}
+        - {x: 75, y: -67}
+        - {x: 85, y: -67}
+        - {x: 107, y: 3}
+        - {x: 107, y: 117}
+        - {x: 106, y: 121}
+      physicsShape:
+      - - {x: 90, y: 121}
+        - {x: 78, y: 100}
+        - {x: 75, y: 43}
+        - {x: 75, y: -67}
+        - {x: 85, y: -67}
+        - {x: 107, y: 3}
+        - {x: 107, y: 117}
+        - {x: 106, y: 121}
       tessellationDetail: 0
     - serializedVersion: 2
       name: HeroL_Weapon_22
@@ -446,11 +916,27 @@ TextureImporter:
         y: 1244
         width: 254
         height: 268
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
+      outline:
+      - - {x: 93, y: 121}
+        - {x: 90, y: 120}
+        - {x: 75, y: 88}
+        - {x: 75, y: -67}
+        - {x: 88, y: -67}
+        - {x: 111, y: 45}
+        - {x: 111, y: 106}
+        - {x: 99, y: 121}
+      physicsShape:
+      - - {x: 93, y: 121}
+        - {x: 90, y: 120}
+        - {x: 75, y: 88}
+        - {x: 75, y: -67}
+        - {x: 88, y: -67}
+        - {x: 111, y: 45}
+        - {x: 111, y: 106}
+        - {x: 99, y: 121}
       tessellationDetail: 0
     - serializedVersion: 2
       name: HeroL_Weapon_23
@@ -460,11 +946,27 @@ TextureImporter:
         y: 1244
         width: 254
         height: 268
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
+      outline:
+      - - {x: 100, y: 125}
+        - {x: 89, y: 125}
+        - {x: 75, y: 11}
+        - {x: 75, y: -63}
+        - {x: 83, y: -63}
+        - {x: 89, y: -50}
+        - {x: 111, y: 62}
+        - {x: 111, y: 108}
+      physicsShape:
+      - - {x: 100, y: 125}
+        - {x: 89, y: 125}
+        - {x: 75, y: 11}
+        - {x: 75, y: -63}
+        - {x: 83, y: -63}
+        - {x: 89, y: -50}
+        - {x: 111, y: 62}
+        - {x: 111, y: 108}
       tessellationDetail: 0
     - serializedVersion: 2
       name: HeroL_Weapon_24
@@ -474,11 +976,27 @@ TextureImporter:
         y: 976
         width: 254
         height: 268
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
+      outline:
+      - - {x: 85, y: 121}
+        - {x: 83, y: 119}
+        - {x: 75, y: 6}
+        - {x: 75, y: -67}
+        - {x: 87, y: -67}
+        - {x: 115, y: 49}
+        - {x: 115, y: 100}
+        - {x: 94, y: 121}
+      physicsShape:
+      - - {x: 85, y: 121}
+        - {x: 83, y: 119}
+        - {x: 75, y: 6}
+        - {x: 75, y: -67}
+        - {x: 87, y: -67}
+        - {x: 115, y: 49}
+        - {x: 115, y: 100}
+        - {x: 94, y: 121}
       tessellationDetail: 0
     - serializedVersion: 2
       name: HeroL_Weapon_25
@@ -488,11 +1006,45 @@ TextureImporter:
         y: 976
         width: 254
         height: 268
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
+      outline:
+      - - {x: 94, y: 117}
+        - {x: 81, y: 117}
+        - {x: 80, y: 93}
+        - {x: 75, y: 39}
+        - {x: 75, y: -67}
+        - {x: 87, y: -67}
+        - {x: 115, y: 42}
+        - {x: 115, y: 94}
+        - {x: 112, y: 109}
+      - - {x: 90, y: 85}
+        - {x: 87, y: 84}
+        - {x: 87, y: 68}
+        - {x: 93, y: 65}
+        - {x: 100, y: 65}
+        - {x: 103, y: 69}
+        - {x: 103, y: 81}
+        - {x: 101, y: 85}
+      physicsShape:
+      - - {x: 94, y: 117}
+        - {x: 81, y: 117}
+        - {x: 80, y: 93}
+        - {x: 75, y: 39}
+        - {x: 75, y: -67}
+        - {x: 87, y: -67}
+        - {x: 115, y: 42}
+        - {x: 115, y: 94}
+        - {x: 112, y: 109}
+      - - {x: 90, y: 85}
+        - {x: 87, y: 84}
+        - {x: 87, y: 68}
+        - {x: 93, y: 65}
+        - {x: 100, y: 65}
+        - {x: 103, y: 69}
+        - {x: 103, y: 81}
+        - {x: 101, y: 85}
       tessellationDetail: 0
     outline: []
     physicsShape: []

@@ -37,7 +37,6 @@ public class WallControl : MonoBehaviour {
         transform.position = pos;
         rightPlayer.transform.position = posPlayerRight;
         leftPlayer.transform.position = posPlayerLeft;
-        Debug.Log("Right player position is " + rightPlayer.transform.position);
     }
 
     void moveWallLeft()
@@ -49,6 +48,5 @@ public class WallControl : MonoBehaviour {
         transform.position = pos;
         rightPlayer.transform.position = posPlayerRight;
         leftPlayer.transform.position = posPlayerLeft;
-        Debug.Log("Moving right");
     }
 }
