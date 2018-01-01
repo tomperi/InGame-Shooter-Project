@@ -113,6 +113,7 @@ MonoBehaviour:
     speed: 1
     player: 0
     type: 0
+  explosion: {fileID: 1491992585198214, guid: fc74f76a35c858942869fccd89445726, type: 2}
 --- !u!212 &212893714235070926
 SpriteRenderer:
   m_ObjectHideFlags: 1

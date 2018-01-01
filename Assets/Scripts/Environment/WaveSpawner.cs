@@ -6,6 +6,8 @@ public class WaveSpawner : MonoBehaviour {
 
 	public enum SpawnState { SPAWNING, WAITING, COUNTING };
 
+    public bool startSpawn, killAll;
+
 	[System.Serializable]
 	public class Wave 
 	{
@@ -36,22 +38,38 @@ public class WaveSpawner : MonoBehaviour {
 		
 	void Update()
 	{
-		if (state == SpawnState.WAITING) {
-			if (!EnemyIsAlive ()) {
-				//Begin a new round
-				WaveCompleted();
-			} else {
-				return;
-			}
-		}
+        if (startSpawn)
+        {
+            if (state == SpawnState.WAITING)
+            {
+                if (!EnemyIsAlive())
+                {
+                    //Begin a new round
+                    WaveCompleted();
+                }
+                else
+                {
+                    return;
+                }
+            }
 
-		if (waveCountdown <= 0) {
-			if (state != SpawnState.SPAWNING) {
-				StartCoroutine (SpawnWave (waves [nextWave]));
-			}
-		} else {
-			waveCountdown -= Time.deltaTime;
-		}
+            if (waveCountdown <= 0)
+            {
+                if (state != SpawnState.SPAWNING)
+                {
+                    StartCoroutine(SpawnWave(waves[nextWave]));
+                }
+            }
+            else
+            {
+                waveCountdown -= Time.deltaTime;
+            }
+        }
+
+        if (killAll)
+        {
+            killAllEnemies();
+        }
 	}
 
 	void WaveCompleted()
@@ -201,6 +219,18 @@ public class WaveSpawner : MonoBehaviour {
         else
         {
             return new Vector2(min.x - 1, 0);
+        }
+    }
+
+    void killAllEnemies()
+    {
+        GameObject[] allEnemies;
+
+        allEnemies = GameObject.FindGameObjectsWithTag("Enemy");
+
+        foreach (GameObject enemy in allEnemies)
+        {
+            enemy.GetComponent<BasicEnemy>().Die();
         }
     }
 }

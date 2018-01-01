@@ -6,7 +6,6 @@ public enum enemyType { small, medium, large };
 
 public abstract class BasicEnemy : MonoBehaviour {
 
-	private GameObject sprite;
 
     [System.Serializable]
 	public class EnemyStats
@@ -19,7 +18,10 @@ public abstract class BasicEnemy : MonoBehaviour {
 	}
     
 	public EnemyStats enemyStats = new EnemyStats();
+    public GameObject explosion;
+
     private SpriteRenderer sr;
+    private GameObject sprite;
 
     // Use this for initialization
     protected virtual void Start ()
@@ -58,6 +60,8 @@ public abstract class BasicEnemy : MonoBehaviour {
 
     public virtual void Die()
     {
+        GameObject exp = Instantiate(explosion);
+        exp.transform.position = this.transform.position;
         Destroy(this.gameObject);
     }
 

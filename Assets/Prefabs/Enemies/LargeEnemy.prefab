@@ -76,6 +76,7 @@ MonoBehaviour:
     speed: 0.2
     player: 0
     type: 2
+  explosion: {fileID: 1491992585198214, guid: fc74f76a35c858942869fccd89445726, type: 2}
   spawnAfter: 5
   spawnRate: 1
   missle: {fileID: 1235403507281516, guid: 51738a4e0202d794dab1251c8a48855b, type: 2}

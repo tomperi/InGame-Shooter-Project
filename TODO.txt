@@ -4,11 +4,11 @@ Sprites
 		Medium
 		Hard
 	Implement player sprites (add another gameobject for the staff, change shot spawn location)
-		Left Player
-		Right Player
+[DONE]		Left Player
+[DONE]		Right Player
 	Enviroment
 [DONE]		Background
-		Wall
+[DONE]		Wall
 	Manage sorting layers [WIP]
 
 Wave Spawner
@@ -43,8 +43,8 @@ Texts
 
 Player 
 	Move wall when enemies hit the player	
-	Fix player rotation script
-	Fix shotting direction (add +-90 degree to the fire)
+[DONE]	Fix player rotation script
+[DONE]	Fix shotting direction (add +-90 degree to the fire)
 
 Instruction mode 
 	Implement instruction text  

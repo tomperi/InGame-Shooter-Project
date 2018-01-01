@@ -92,6 +92,7 @@ MonoBehaviour:
     speed: 1
     player: 0
     type: 1
+  explosion: {fileID: 1491992585198214, guid: fc74f76a35c858942869fccd89445726, type: 2}
   spawnAfter: 1
   spawnRate: 3
   maxShots: -1
