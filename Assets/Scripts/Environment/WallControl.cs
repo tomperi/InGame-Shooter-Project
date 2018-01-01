@@ -24,8 +24,9 @@ public class WallControl : MonoBehaviour {
         {
             moveWallLeft();
         }
-				
-		Destroy(other.gameObject);
+
+        other.GetComponent<BasicEnemy>().Die();
+		//Destroy(other.gameObject);
 	}
 
     void moveWallRight()
