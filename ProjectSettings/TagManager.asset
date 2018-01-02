@@ -8,6 +8,8 @@ TagManager:
   - LeftPlayer
   - Enemy
   - Shot
+  - MediumEnemy
+  - Wall
   layers:
   - Default
   - TransparentFX
