@@ -5,16 +5,29 @@ using UnityEngine;
 
 public class HardEnemy : BasicEnemy {
 
+    public float distanceToStopFromWall;
     public float spawnAfter;
     public float spawnRate;
     public GameObject missle;
-
+    GameObject wall;
 
     protected override void Start()
     {
         base.Start();
-
+        wall = GameObject.FindGameObjectWithTag("Wall");
         InvokeRepeating("Shoot", spawnAfter, spawnRate);
+    }
+
+    public override void Move()
+    {
+        float distance = Mathf.Abs(this.transform.position.x - wall.transform.position.x);
+        if (distanceToStopFromWall < distance) { 
+            Vector2 position = transform.position;
+
+            position = new Vector2(position.x - enemyStats.speed * Time.deltaTime, position.y);
+
+            transform.position = position;
+        }
     }
 
     void Shoot()
