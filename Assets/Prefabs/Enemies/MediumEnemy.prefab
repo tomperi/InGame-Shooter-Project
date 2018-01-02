@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212194403560170444}
   - component: {fileID: 95101683966322568}
   - component: {fileID: 114244152261671596}
-  - component: {fileID: 70583367737663650}
+  - component: {fileID: 58378454706605500}
   m_Layer: 0
   m_Name: MediumEnemy
   m_TagString: Enemy
@@ -38,13 +38,13 @@ Transform:
   m_GameObject: {fileID: 1910707226885422}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.34, y: 1.64, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!70 &70583367737663650
-CapsuleCollider2D:
+--- !u!58 &58378454706605500
+CircleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -52,12 +52,12 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.4, y: 0.4}
-  m_Direction: 0
+  m_Offset: {x: 0, y: 0.19}
+  serializedVersion: 2
+  m_Radius: 0.71
 --- !u!95 &95101683966322568
 Animator:
   serializedVersion: 3
@@ -67,7 +67,7 @@ Animator:
   m_GameObject: {fileID: 1910707226885422}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 689ad4ef133526b4db5115d8b3eccc69, type: 2}
+  m_Controller: {fileID: 9100000, guid: f09536a8c75cc2e458c32f70d8858850, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -131,7 +131,7 @@ SpriteRenderer:
   m_SortingLayerID: -2136857451
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300012, guid: 8d18f6d2b73e89b4882fbf3bb5aedb4b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d4fe51b9d226d3546b96ab87c5e35333, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

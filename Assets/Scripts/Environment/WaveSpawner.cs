@@ -231,6 +231,7 @@ public class WaveSpawner : MonoBehaviour {
         foreach (GameObject enemy in allEnemies)
         {
             enemy.GetComponent<BasicEnemy>().Die();
+            Debug.Log("Killed an enemy");
         }
     }
 }

@@ -29,12 +29,10 @@ public abstract class BasicEnemy : MonoBehaviour {
         sr = GetComponent<SpriteRenderer>();
         if (enemyStats.player.Equals(Player.right))
         {
-            transform.eulerAngles = new Vector3(0, 0, -90);
         }
         else
         {
             enemyStats.speed *= -1;
-            transform.eulerAngles = new Vector3(0, 0, 90);
             sr.flipX = true;
             
         }

@@ -20,11 +20,13 @@ public class HardEnemy : BasicEnemy {
     void Shoot()
     {
         string TAG;
-        if (enemyStats.player == Player.right) TAG = "RightPlayer";
-        else TAG = "LeftPlayer";
+        if (enemyStats.player == Player.right)
+            TAG = "RightPlayer";
+        else
+            TAG = "LeftPlayer";
 
         GameObject m = Instantiate(missle, this.transform.position, Quaternion.identity);
         m.GetComponent<Missle>().p_target = GameObject.FindGameObjectWithTag(TAG);
-        m.GetComponent<Missle>().speed = 3 * this.enemyStats.speed;
+        m.GetComponent<Missle>().enemyStats.player = this.enemyStats.player;
     }
 }
