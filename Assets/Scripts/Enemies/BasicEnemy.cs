@@ -63,5 +63,19 @@ public abstract class BasicEnemy : MonoBehaviour {
         Destroy(this.gameObject);
     }
 
+    public virtual void OnTriggerEnter2D(Collider2D other)
+    {
+        Debug.Log(this.name + " has collided with " + other.name);
+        if ((other.tag == "RightPlayer") || (other.tag == "LeftPlayer"))
+        {
+            GameObject wall = GameObject.FindGameObjectWithTag("Wall");
+            if (other.tag == "RightPlayer")
+                wall.GetComponent<WallControl>().moveWallRight();
+            else
+                wall.GetComponent<WallControl>().moveWallLeft();
+            Die();
+        }
+    }
+
 }
 

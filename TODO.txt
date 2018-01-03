@@ -1,8 +1,8 @@
 Sprites
 	Implement enemy sprites
-		Easy
-		Medium
-		Hard
+[DONE]		Easy
+[DONE]		Medium
+[DONE]		Hard
 	Implement player sprites (add another gameobject for the staff, change shot spawn location)
 [DONE]		Left Player
 [DONE]		Right Player
@@ -16,20 +16,21 @@ Wave Spawner
 
 General Scripting
 [DONE]	Change all enemy scripts so they inherit from BasicEnemy 
-	Add explosion after enemy destruction
+[DONE]	Add explosion after enemy destruction
 
 Medium enemy
 [DONE]	Add max of shots, then destroy (if == 0, keep firing forever)
 [DONE]	Add fire rate
 	
 Large enemy
-	Set stopping point (distance from the wall)
+[DONE]	Set stopping point (distance from the wall)
 	Change missle speed/quantity in game editor
 	Add shield (use 2 colliders)
 	Spawn missles from a different position (shot spawn mechanism)
 
 Missles
-	Face towards player
+[DONE]	Face towards player
+[DONE]	Add collider and rigidbody to the missles
 
 Scenes
 	Opening screen
@@ -42,8 +43,8 @@ Texts
 	Player 1/2 wins!
 
 Player 
-	Move wall when enemies hit the player	
-	Limit player movement top/bottom (can now overflow from screen). Limit the small enemy spawn accordingly.
+[DONE]	Move wall when enemies hit the player	
+[DONE]	Limit player movement top/bottom (can now overflow from screen). Limit the small enemy spawn accordingly.
 [DONE]	Fix player rotation script
 [DONE]	Fix shotting direction (add +-90 degree to the fire)
 

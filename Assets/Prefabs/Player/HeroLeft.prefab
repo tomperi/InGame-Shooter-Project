@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212510507465256646}
   - component: {fileID: 95374081181783110}
   - component: {fileID: 114990756068337336}
+  - component: {fileID: 70907464231215524}
   m_Layer: 0
   m_Name: HeroLeft
   m_TagString: LeftPlayer
@@ -39,9 +40,10 @@ GameObject:
   - component: {fileID: 4815923697149918}
   - component: {fileID: 212317893291028336}
   - component: {fileID: 95608444112193126}
+  - component: {fileID: 70325400542182536}
   m_Layer: 0
   m_Name: HeroLWeapon
-  m_TagString: Untagged
+  m_TagString: LeftPlayer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -102,6 +104,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!70 &70325400542182536
+CapsuleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1646134061006390}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -1.41, y: 0.26}
+  m_Size: {x: 0.52, y: 2.05}
+  m_Direction: 0
+--- !u!70 &70907464231215524
+CapsuleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1387001930283450}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.08, y: 0.19}
+  m_Size: {x: 0.9, y: 1.9}
+  m_Direction: 0
 --- !u!95 &95374081181783110
 Animator:
   serializedVersion: 3

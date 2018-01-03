@@ -9,7 +9,7 @@ public class PlayerControl : MonoBehaviour
 {
     public GameObject PlayerBullet;
     public GameObject ShotSpawn1;
-    public GameObject ShotSpawn2;
+    //public GameObject ShotSpawn2;
     public Player player;
     public float speed, rotateSpeed;
     public float maxAngle;
@@ -74,8 +74,8 @@ public class PlayerControl : MonoBehaviour
         max.x = max.x - 0.225f;
         min.x = min.x + 0.225f;
 
-        max.y = max.y - 0.285f;
-        min.y = min.y + 0.285f;
+        max.y = max.y - 0.4f;
+        min.y = min.y + 0.8f;
 
         // Get the player current position
         Vector2 pos = transform.position;
@@ -109,12 +109,12 @@ public class PlayerControl : MonoBehaviour
         //bullet2.transform.rotation = ShotSpawn1.transform.rotation;
     }
 
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.tag != "Shot")
-        {
-            Destroy(other.gameObject);
-        }
-    }
+    //void OnTriggerEnter2D(Collider2D other)
+    //{
+    //    if (other.tag != "Shot")
+    //    {
+    //        Destroy(other.gameObject);
+    //    }
+    //}
 }
 

@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212995083916850762}
   - component: {fileID: 95835409489864534}
   - component: {fileID: 114630097433382052}
+  - component: {fileID: 58296806316204404}
   m_Layer: 0
   m_Name: LargeEnemy
   m_TagString: Enemy
@@ -36,12 +37,27 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1050282788800370}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.509542, y: -0.15766469, z: 0}
+  m_LocalPosition: {x: 4.48, y: -0.17910132, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &58296806316204404
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1050282788800370}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.04, y: 0.61}
+  serializedVersion: 2
+  m_Radius: 0.4
 --- !u!95 &95835409489864534
 Animator:
   serializedVersion: 3
@@ -72,11 +88,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyStats:
     maxSpeed: 0.5
-    hp: 1
+    hp: 10
     speed: 0.2
     player: 0
     type: 2
   explosion: {fileID: 1491992585198214, guid: fc74f76a35c858942869fccd89445726, type: 2}
+  distanceToStopFromWall: 2.5
   spawnAfter: 5
   spawnRate: 3
   missle: {fileID: 1235403507281516, guid: 51738a4e0202d794dab1251c8a48855b, type: 2}

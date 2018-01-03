@@ -174,8 +174,8 @@ public class WaveSpawner : MonoBehaviour {
         Vector2 min = Camera.main.ViewportToWorldPoint(new Vector2(0, 0));
         Vector2 max = Camera.main.ViewportToWorldPoint(new Vector2(1, 1));
 
-        max.y = max.y - 0.285f;
-        min.y = min.y + 0.285f;
+        max.y = max.y - 0.15f;
+        min.y = min.y + 0.35f;
         
         if (player.Equals(Player.right))
         {

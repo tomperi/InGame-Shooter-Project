@@ -5,8 +5,7 @@ using UnityEngine;
 public class Missle : BasicEnemy {
 
     public GameObject p_target;
-
-    // Update is called once per frame
+    
     protected override void Start()
     {
         base.Start();
@@ -14,6 +13,7 @@ public class Missle : BasicEnemy {
            enemyStats.speed *= -1;
         }
     }
+
     public override void Move()
     {
             transform.position = Vector2.MoveTowards(new Vector2(

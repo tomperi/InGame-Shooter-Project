@@ -11,10 +11,6 @@ public class WallControl : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other) {
 
-        pos = transform.position;
-        posPlayerRight = rightPlayer.transform.position;
-        posPlayerLeft = leftPlayer.transform.position;
-
         //Player player = other.GetComponent<EnemyControl> ().player;
         Player player = other.GetComponent<BasicEnemy>().enemyStats.player;
 		if (player.Equals(Player.right))
@@ -29,8 +25,12 @@ public class WallControl : MonoBehaviour {
 		//Destroy(other.gameObject);
 	}
 
-    void moveWallRight()
+    public void moveWallRight()
     {
+        pos = transform.position;
+        posPlayerRight = rightPlayer.transform.position;
+        posPlayerLeft = leftPlayer.transform.position;
+
         pos.x += move;
         posPlayerLeft.x += move;
         posPlayerRight.x += move;
@@ -40,8 +40,12 @@ public class WallControl : MonoBehaviour {
         leftPlayer.transform.position = posPlayerLeft;
     }
 
-    void moveWallLeft()
+    public void moveWallLeft()
     {
+        pos = transform.position;
+        posPlayerRight = rightPlayer.transform.position;
+        posPlayerLeft = leftPlayer.transform.position;
+
         pos.x -= move;
         posPlayerLeft.x -= move;
         posPlayerRight.x -= move;
