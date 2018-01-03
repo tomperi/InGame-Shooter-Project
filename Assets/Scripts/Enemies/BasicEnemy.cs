@@ -65,7 +65,6 @@ public abstract class BasicEnemy : MonoBehaviour {
 
     public virtual void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log(this.name + " has collided with " + other.name);
         if ((other.tag == "RightPlayer") || (other.tag == "LeftPlayer"))
         {
             GameObject wall = GameObject.FindGameObjectWithTag("Wall");

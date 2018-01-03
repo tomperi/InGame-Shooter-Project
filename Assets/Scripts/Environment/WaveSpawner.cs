@@ -6,7 +6,7 @@ public class WaveSpawner : MonoBehaviour {
 
 	public enum SpawnState { SPAWNING, WAITING, COUNTING };
 
-    public bool startSpawn, killAll;
+    public bool startSpawn, killAll, pause;
 
 	[System.Serializable]
 	public class Wave 
@@ -31,13 +31,17 @@ public class WaveSpawner : MonoBehaviour {
 
 	private SpawnState state = SpawnState.COUNTING;
 
+    private bool uiPaused;
+    
 	void Start()
 	{
 		waveCountdown = timeBetweenWaves;
 	}
 		
 	void Update()
-	{
+    {
+        pausePlayGame();
+
         if (startSpawn)
         {
             if (state == SpawnState.WAITING)
@@ -151,19 +155,22 @@ public class WaveSpawner : MonoBehaviour {
 
 	void SpawnEnemy (BasicEnemy _enemy, Player player)
 	{
-		BasicEnemy enemy = Instantiate (_enemy);
-        enemy.enemyStats.player = player; 
-        switch (enemy.enemyStats.type)
+        if (startSpawn)
         {
-            case (enemyType.small):
-                enemy.transform.position = getEasyEnemyPosition(player);
-                break;
-            case (enemyType.medium):
-                enemy.transform.position = getMediumEnemyPosition(player);
-                break;
-            default:
-                enemy.transform.position = getHardEnemyPosition(player);
-                break;
+            BasicEnemy enemy = Instantiate(_enemy);
+            enemy.enemyStats.player = player;
+            switch (enemy.enemyStats.type)
+            {
+                case (enemyType.small):
+                    enemy.transform.position = getEasyEnemyPosition(player);
+                    break;
+                case (enemyType.medium):
+                    enemy.transform.position = getMediumEnemyPosition(player);
+                    break;
+                default:
+                    enemy.transform.position = getHardEnemyPosition(player);
+                    break;
+            }
         }
 
 		//Debug.Log("Spawning Enemy: " + _enemy.name);
@@ -234,4 +241,39 @@ public class WaveSpawner : MonoBehaviour {
             Debug.Log("Killed an enemy");
         }
     }
+
+    void pausePlayGame()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (pause)
+            {
+                Debug.Log("Change scene code here");
+            } else
+            {
+                Debug.Log("Pause the scene");
+                pause = true;
+            }
+        }
+
+        if (pause && Input.GetKeyDown(KeyCode.Space))
+        {
+            pause = false;
+            Debug.Log("Upause the scene");
+        }
+
+        if (pause)
+        {
+            Time.timeScale = 0;
+            GameObject.Find("PauseBG").GetComponent<CanvasGroup>().alpha = 0.3f;
+            uiPaused = true;
+        }
+        else if (uiPaused)
+        {
+            uiPaused = false;
+            GameObject.Find("PauseBG").GetComponent<CanvasGroup>().alpha = 0f;
+            Time.timeScale = 1;
+        }
+    }
 }
+
