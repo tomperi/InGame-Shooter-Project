@@ -7,37 +7,39 @@ public class TextManager : MonoBehaviour {
 
 	public float timer;
 	public float aValue = 1;
-	float TmStart;
-	float TmLen = 5f;
 	private CanvasGroup trans;
+	private bool show = false;
 
 	void Start()
 	{
-		TmStart = Time.time;
 		trans = GetComponent<CanvasGroup>();
 		trans.alpha = aValue;
+		GetComponent<Text> ().enabled = false;
 	}
 
 	void Update () {
 		timer += Time.deltaTime;
 
-		// Dissapear after 5 seconds;
-		if (Time.time > TmStart + TmLen) {
-			GetComponent<Text> ().gameObject.SetActive (true);
-		}
+		if (show) {
+			if (timer >= 0.5) {
+				GetComponent<Text> ().enabled = true;
+			}
 
-		if (timer >= 0.5) {
-			GetComponent<Text> ().enabled = true;
-		}
+			if (timer >= 1) {
+				GetComponent<Text> ().enabled = false;
+				timer = 0;
+			}
 
-		if (timer >= 1) {
-			GetComponent<Text> ().enabled = false;
-			timer = 0;
-		}
-
-		if (Input.anyKeyDown) {
-			Destroy (gameObject);
+			if (Input.anyKeyDown) {
+				Destroy (gameObject);
+			}
+		
 		}
 			
+	}
+
+	public void Appear() 
+	{
+		show = true;
 	}
 }
