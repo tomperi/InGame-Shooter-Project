@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 3c8bf887689be449780d6d82bc17c491
+timeCreated: 1514899383
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: DPComic
+  fontNames:
+  - DPComic
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
