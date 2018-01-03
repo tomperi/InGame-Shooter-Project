@@ -266,12 +266,14 @@ public class WaveSpawner : MonoBehaviour {
         {
             Time.timeScale = 0;
             GameObject.Find("PauseBG").GetComponent<CanvasGroup>().alpha = 0.3f;
+            GameObject.Find("PauseText").GetComponent<CanvasGroup>().alpha = 1f;
             uiPaused = true;
         }
         else if (uiPaused)
         {
             uiPaused = false;
             GameObject.Find("PauseBG").GetComponent<CanvasGroup>().alpha = 0f;
+            GameObject.Find("PauseText").GetComponent<CanvasGroup>().alpha = 0f;
             Time.timeScale = 1;
         }
     }
