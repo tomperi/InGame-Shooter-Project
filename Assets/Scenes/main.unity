@@ -146,11 +146,24 @@ MonoBehaviour:
   - name: First
     enemies:
     - {fileID: 114847562207386138, guid: 6dc541732e77e6e408ebe2b64a8c98c3, type: 2}
+    enemyCount: 05000000
+    rate: 0.7
+    maxSpeed: 1
+  - name: Second
+    enemies:
+    - {fileID: 114847562207386138, guid: 6dc541732e77e6e408ebe2b64a8c98c3, type: 2}
+    - {fileID: 114244152261671596, guid: bfb415baeacb81c4bbf4b3d524730293, type: 2}
+    enemyCount: 0a00000001000000
+    rate: 0.7
+    maxSpeed: 1
+  - name: Third
+    enemies:
+    - {fileID: 114847562207386138, guid: 6dc541732e77e6e408ebe2b64a8c98c3, type: 2}
     - {fileID: 114244152261671596, guid: bfb415baeacb81c4bbf4b3d524730293, type: 2}
     - {fileID: 114349765101579620, guid: 04dda8d08c63777489849783871aaf3b, type: 2}
-    enemyCount: 0a0000000300000001000000
-    rate: 0.3
-    maxSpeed: 3
+    enemyCount: 0c0000000200000001000000
+    rate: 0.7
+    maxSpeed: 1
   timeBetweenWaves: 5
   waveCountdown: 0
 --- !u!4 &358306755
@@ -776,7 +789,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.1591785, b: 0.53676474, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
