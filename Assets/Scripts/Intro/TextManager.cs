@@ -7,8 +7,8 @@ public class TextManager : MonoBehaviour {
 
 	public float timer;
 	public float aValue = 1;
-	public float TmStart;
-	public TmLen = 5f;
+	float TmStart;
+	float TmLen = 5f;
 	private CanvasGroup trans;
 
 	void Start()
@@ -23,7 +23,7 @@ public class TextManager : MonoBehaviour {
 
 		// Dissapear after 5 seconds;
 		if (Time.time > TmStart + TmLen) {
-			GetComponent<Text>.gameObject.SetActive (true);
+			GetComponent<Text> ().gameObject.SetActive (true);
 		}
 
 		if (timer >= 0.5) {
