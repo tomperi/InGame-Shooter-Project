@@ -26,7 +26,7 @@ Large enemy
 [DONE]	Set stopping point (distance from the wall)
 	Change missle speed/quantity in game editor
 	Add shield (use 2 colliders)
-	Spawn missles from a different position (shot spawn mechanism)
+[DONE]	Spawn missles from a different position (shot spawn mechanism)
 
 Missles
 [DONE]	Face towards player
