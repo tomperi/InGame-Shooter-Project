@@ -36,7 +36,7 @@ public class PlayerControl : MonoBehaviour
         {
             verticalAxis = "LeftVertical";
             horizontalAxis = "LeftHorizontal";
-            fire = "left ctrl";
+            fire = "left shift";
             defaultAngle = 0;
             maxAngleUp = defaultAngle - maxAngle;
             maxAngleDown = defaultAngle + maxAngle;
@@ -63,7 +63,8 @@ public class PlayerControl : MonoBehaviour
         {
             Shot();
         }
-	}
+
+    }
 
     void Move(Vector2 direction)
     {
