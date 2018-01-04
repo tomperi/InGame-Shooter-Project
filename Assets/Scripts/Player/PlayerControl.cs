@@ -95,7 +95,6 @@ public class PlayerControl : MonoBehaviour
         defaultAngle = Mathf.Clamp(defaultAngle, maxAngleUp, maxAngleDown);
         staffRotation = transform.GetChild(0);
         staffRotation.localEulerAngles = new Vector3(0, 0, defaultAngle);
-        // transform.Rotate(new Vector3(0, 0, rotate * rotateSpeed * -1));
     }
 
     void Shot()
@@ -104,18 +103,9 @@ public class PlayerControl : MonoBehaviour
         bullet1.transform.position = ShotSpawn1.transform.position;
         bullet1.transform.rotation = ShotSpawn1.transform.rotation;
         bullet1.transform.eulerAngles += shotDirection;
-
-        //GameObject bullet2 = (GameObject)Instantiate(PlayerBullet);
-        //bullet2.transform.position = ShotSpawn2.transform.position;
-        //bullet2.transform.rotation = ShotSpawn1.transform.rotation;
+        
     }
 
-    //void OnTriggerEnter2D(Collider2D other)
-    //{
-    //    if (other.tag != "Shot")
-    //    {
-    //        Destroy(other.gameObject);
-    //    }
-    //}
+
 }
 
