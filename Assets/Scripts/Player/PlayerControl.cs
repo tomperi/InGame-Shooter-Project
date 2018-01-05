@@ -18,7 +18,7 @@ public class PlayerControl : MonoBehaviour
     public bool hasBonus;
     public BonusTypes bonusType;
 
-    private string verticalAxis, horizontalAxis, fire;
+    private string verticalAxis, horizontalAxis, fire, bonusKey;
     private Vector2 min, max;
     private Vector3 shotDirection;
     private float maxAngleUp, maxAngleDown, defaultAngle;
@@ -35,17 +35,19 @@ public class PlayerControl : MonoBehaviour
             maxAngleUp = defaultAngle - maxAngle;
             maxAngleDown = defaultAngle + maxAngle;
             shotDirection = new Vector3(0, 0, -90);
+            bonusKey = ".";
         } else
         {
             verticalAxis = "LeftVertical";
             horizontalAxis = "LeftHorizontal";
-            fire = "left shift";
+            fire = "caps lock";
             defaultAngle = 0;
             maxAngleUp = defaultAngle - maxAngle;
             maxAngleDown = defaultAngle + maxAngle;
             shotDirection = new Vector3(0, 0, 90);
+            bonusKey = "q";
         }
-	}
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -64,6 +66,10 @@ public class PlayerControl : MonoBehaviour
         if (Input.GetKeyDown(fire))
         {
             Shot();
+        }
+        if (Input.GetKeyDown(bonusKey))
+        {
+            UseBonus();
         }
 
     }
@@ -124,8 +130,8 @@ public class PlayerControl : MonoBehaviour
                                 enemy.GetComponent<BasicEnemy>().Die();
                             }
                         }
-                        hasBonus = false;
-                        return;
+                        this.hasBonus = false;
+                        break;
                     }
                 case BonusTypes.moveWall:
                     {
@@ -143,9 +149,26 @@ public class PlayerControl : MonoBehaviour
                             wall.GetComponent<WallControl>().moveWallLeft();
                             wall.GetComponent<WallControl>().moveWallLeft();
                         }
-                        hasBonus = false;
-                        return;
+                        this.hasBonus = false;
+                        break;
                     }
+                default:
+                    {
+                        Debug.Log("Bonus function called, probably type 1.");
+                        break;
+                    }
+
+
+
+            }
+            if (player == Player.left)
+            {
+                GameObject.Find("BonusLeftUI").GetComponent<BonusUI>().show = false;
+            }
+            else
+            {
+                GameObject.Find("BonusRightUI").GetComponent<BonusUI>().show = false;
+
             }
         }
        
