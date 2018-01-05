@@ -8,14 +8,13 @@ public class TextManager : MonoBehaviour {
 	public float timer;
 	public float aValue = 1;
 	private CanvasGroup trans;
-	private bool show = false;
+	private bool show = true;
 
 	void Start()
 	{
 		trans = GetComponent<CanvasGroup>();
 		trans.alpha = aValue;
 		GetComponent<Text> ().enabled = false;
-		Appear ();
 	}
 
 	void Update () {
@@ -33,6 +32,7 @@ public class TextManager : MonoBehaviour {
 
 			if (Input.anyKeyDown) {
 				Destroy (gameObject);
+				Destroy (GameObject.Find ("Logo"));
 			}
 		
 		}
