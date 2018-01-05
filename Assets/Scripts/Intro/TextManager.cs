@@ -15,6 +15,7 @@ public class TextManager : MonoBehaviour {
 		trans = GetComponent<CanvasGroup>();
 		trans.alpha = aValue;
 		GetComponent<Text> ().enabled = false;
+		Appear ();
 	}
 
 	void Update () {

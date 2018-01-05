@@ -1,0 +1,535 @@
+fileFormatVersion: 2
+guid: 6ba46a262ae164a1389a46591cf6d2f3
+timeCreated: 1515161524
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Falling Wall_0
+    21300002: Falling Wall_1
+    21300004: Falling Wall_2
+    21300006: Falling Wall_3
+    21300008: Falling Wall_4
+    21300010: Falling Wall_5
+    21300012: Falling Wall_6
+    21300014: Falling Wall_7
+    21300016: Falling Wall_8
+    21300018: Falling Wall_9
+    21300020: Falling Wall_10
+    21300022: Falling Wall_11
+    21300024: Falling Wall_12
+    21300026: Falling Wall_13
+    21300028: Falling Wall_14
+    21300030: Falling Wall_15
+    21300032: Falling Wall_16
+    21300034: Falling Wall_17
+    21300036: Falling Wall_18
+    21300038: Falling Wall_19
+    21300040: Falling Wall_20
+    21300042: Falling Wall_21
+    21300044: Falling Wall_22
+    21300046: Falling Wall_23
+    21300048: Falling Wall_24
+    21300050: Falling Wall_25
+    21300052: Falling Wall_26
+    21300054: Falling Wall_27
+    21300056: Falling Wall_28
+    21300058: Falling Wall_29
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Falling Wall_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1174
+        width: 184
+        height: 874
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Falling Wall_1
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 1174
+        width: 184
+        height: 874
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Falling Wall_2
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 1174
+        width: 184
+        height: 874
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Falling Wall_3
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 1174
+        width: 184
+        height: 874
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Falling Wall_4
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 1174
+        width: 184
+        height: 874
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Falling Wall_5
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 1174
+        width: 184
+        height: 874
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Falling Wall_6
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 1174
+        width: 184
+        height: 874
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Falling Wall_7
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 1174
+        width: 184
+        height: 874
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Falling Wall_8
+      rect:
+        serializedVersion: 2
+        x: 2024
+        y: 1174
+        width: 184
+        height: 874
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Falling Wall_9
+      rect:
+        serializedVersion: 2
+        x: 2392
+        y: 1174
+        width: 184
+        height: 874
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Falling Wall_10
+      rect:
+        serializedVersion: 2
+        x: 2576
+        y: 1174
+        width: 184
+        height: 874
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Falling Wall_11
+      rect:
+        serializedVersion: 2
+        x: 2944
+        y: 1174
+        width: 184
+        height: 874
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Falling Wall_12
+      rect:
+        serializedVersion: 2
+        x: 3128
+        y: 1174
+        width: 184
+        height: 874
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Falling Wall_13
+      rect:
+        serializedVersion: 2
+        x: 3312
+        y: 1174
+        width: 184
+        height: 874
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Falling Wall_14
+      rect:
+        serializedVersion: 2
+        x: 3496
+        y: 1174
+        width: 184
+        height: 874
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Falling Wall_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 300
+        width: 184
+        height: 874
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Falling Wall_16
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 300
+        width: 184
+        height: 874
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Falling Wall_17
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 300
+        width: 184
+        height: 874
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Falling Wall_18
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 300
+        width: 184
+        height: 874
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Falling Wall_19
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 300
+        width: 184
+        height: 874
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Falling Wall_20
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 300
+        width: 184
+        height: 874
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Falling Wall_21
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 300
+        width: 184
+        height: 874
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Falling Wall_22
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 300
+        width: 184
+        height: 874
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Falling Wall_23
+      rect:
+        serializedVersion: 2
+        x: 2024
+        y: 300
+        width: 184
+        height: 874
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Falling Wall_24
+      rect:
+        serializedVersion: 2
+        x: 2392
+        y: 300
+        width: 184
+        height: 874
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Falling Wall_25
+      rect:
+        serializedVersion: 2
+        x: 2576
+        y: 300
+        width: 184
+        height: 874
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Falling Wall_26
+      rect:
+        serializedVersion: 2
+        x: 2944
+        y: 300
+        width: 184
+        height: 874
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Falling Wall_27
+      rect:
+        serializedVersion: 2
+        x: 3128
+        y: 300
+        width: 184
+        height: 874
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Falling Wall_28
+      rect:
+        serializedVersion: 2
+        x: 3312
+        y: 300
+        width: 184
+        height: 874
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Falling Wall_29
+      rect:
+        serializedVersion: 2
+        x: 3496
+        y: 300
+        width: 184
+        height: 874
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
