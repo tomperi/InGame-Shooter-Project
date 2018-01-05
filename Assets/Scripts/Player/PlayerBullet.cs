@@ -38,7 +38,7 @@ public class PlayerBullet : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if ((other.tag != "RightPlayer") && (other.tag != "LeftPlayer") && (other.tag != "Shot"))
+        if ((other.tag != "RightPlayer") && (other.tag != "LeftPlayer") && (other.tag != "Shot") && (other.tag != "Bonus"))
         {
             other.GetComponent<BasicEnemy>().enemyStats.hp--;
             Destroy(this.gameObject);

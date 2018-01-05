@@ -4,6 +4,7 @@ using UnityEngine;
 
 // Define data types
 public enum Player { right, left };
+public enum BonusTypes { type1, type2, type3 };
 
 public class PlayerControl : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class PlayerControl : MonoBehaviour
     public float speed, rotateSpeed;
     public float maxAngle;
     public bool dock;
+    public bool hasBonus;
+    public BonusTypes bonusType;
 
     private string verticalAxis, horizontalAxis, fire;
     private Vector2 min, max;
@@ -42,7 +45,6 @@ public class PlayerControl : MonoBehaviour
             maxAngleDown = defaultAngle + maxAngle;
             shotDirection = new Vector3(0, 0, 90);
         }
-        Debug.Log(player + " " + maxAngleUp + " " + maxAngleDown);
 	}
 	
 	// Update is called once per frame

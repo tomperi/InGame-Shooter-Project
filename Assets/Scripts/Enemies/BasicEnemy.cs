@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum enemyType { small, medium, large };
+public enum enemyType { small, medium, large, bonus};
 
 public abstract class BasicEnemy : MonoBehaviour {
 

@@ -16,9 +16,11 @@ public class WaveSpawner : MonoBehaviour {
         public int[] enemyCount;
 		public float rate;
 		public float maxSpeed;
+        public bool bonus;
 	}
 
 	public Wave[] waves;
+    public BasicEnemy bonus;
 	private int nextWave = 0;
 
 	public float timeBetweenWaves = 5f;
@@ -28,6 +30,7 @@ public class WaveSpawner : MonoBehaviour {
 
 	private int enemiesSpawned = 0;
     private int totalEnemiesThisWave = 0;
+    private int waveCount = 0;
 
 	private SpawnState state = SpawnState.COUNTING;
 
@@ -36,7 +39,9 @@ public class WaveSpawner : MonoBehaviour {
 	void Start()
 	{
 		waveCountdown = timeBetweenWaves;
-	}
+        GameObject.Find("HeroLeft").GetComponent<PlayerControl>().dock = true;
+        GameObject.Find("HeroRight").GetComponent<PlayerControl>().dock = true;
+    }
 		
 	void Update()
     {
@@ -77,12 +82,15 @@ public class WaveSpawner : MonoBehaviour {
 	}
 
 	void WaveCompleted()
-	{
-		Debug.Log("Wave completed");
-
-		state = SpawnState.COUNTING;
+    {
+        waveCount++;
+        Debug.Log("Wave completed. Finished wave " + waveCount);
+        if (waveCount == 1)
+        {
+            undock();
+        }
+        state = SpawnState.COUNTING;
 		waveCountdown = timeBetweenWaves;
-
 		if (nextWave + 1 > waves.Length - 1) {
 			nextWave = 0;
 			Debug.Log ("ALL WAVES COMPLETE! Looping..");
@@ -106,6 +114,7 @@ public class WaveSpawner : MonoBehaviour {
 
 	IEnumerator SpawnWave(Wave _wave)
     {
+
         int[] rightEnemies = new int[_wave.enemyCount.Length];
         int[] leftEnemies = new int[_wave.enemyCount.Length];
         System.Array.Copy(_wave.enemyCount, rightEnemies, _wave.enemyCount.Length);
@@ -115,8 +124,18 @@ public class WaveSpawner : MonoBehaviour {
 		enemiesSpawned = 0;
 		state = SpawnState.SPAWNING;
 
+        int bonusTimingRight = -1;
+        int bonusTimingLeft = -1;
+
+        if (_wave.bonus)
+        {
+            bonusTimingRight = Random.Range(5, totalEnemiesThisWave - 2);
+            bonusTimingLeft = Random.Range(5, totalEnemiesThisWave - 2);
+            Debug.Log("We're going to have a bonus in this round! " + bonusTimingLeft + " " + bonusTimingRight);
+        }
+
         // Spawn a random enemy for both player, within the limit
-		for (int i = 0; i < totalEnemiesThisWave; i++) {
+        for (int i = 0; i < totalEnemiesThisWave; i++) {
             int leftEnemy = Random.Range(0, _wave.enemies.Length);
             int rightEnemy = Random.Range(0, _wave.enemies.Length);
 
@@ -136,9 +155,22 @@ public class WaveSpawner : MonoBehaviour {
             SpawnEnemy(enemyToLeftPlayer, Player.left);
             enemiesSpawned += 1;
 			yield return new WaitForSeconds (1f / 2* (_wave.rate * enemiesSpawned));
-		}
 
-		state = SpawnState.WAITING;
+            // Spawning bonuses (only if the player does not have a bonus when bonus is due)
+            if ((i == bonusTimingRight) && (GameObject.Find("HeroRight").GetComponent<PlayerControl>().hasBonus == false))
+            {
+                Debug.Log("bonus for right");
+                SpawnEnemy(bonus, Player.right);
+            }
+
+            if ((i == bonusTimingLeft) && (GameObject.Find("HeroLeft").GetComponent<PlayerControl>().hasBonus == false))
+            {
+                Debug.Log("bonus for right");
+                SpawnEnemy(bonus, Player.left);
+            }
+        }
+
+        state = SpawnState.WAITING;
 
 		yield break;
 	}
@@ -162,6 +194,7 @@ public class WaveSpawner : MonoBehaviour {
             switch (enemy.enemyStats.type)
             {
                 case (enemyType.small):
+                case (enemyType.bonus):
                     enemy.transform.position = getEasyEnemyPosition(player);
                     break;
                 case (enemyType.medium):
@@ -276,6 +309,14 @@ public class WaveSpawner : MonoBehaviour {
             GameObject.Find("PauseText").GetComponent<CanvasGroup>().alpha = 0f;
             Time.timeScale = 1;
         }
+    }
+
+    private void undock()
+    {
+        GameObject.Find("HeroLeft").GetComponent<PlayerControl>().dock = false;
+        GameObject.Find("HeroRight").GetComponent<PlayerControl>().dock = false;
+        GameObject.Find("UndockText1").GetComponent<FlickeringText>().appear();
+        GameObject.Find("UndockText2").GetComponent<FlickeringText>().appear();
     }
 }
 
