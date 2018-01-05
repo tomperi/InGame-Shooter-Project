@@ -4,7 +4,7 @@ using UnityEngine;
 
 // Define data types
 public enum Player { right, left };
-public enum BonusTypes { type1, type2, type3 };
+public enum BonusTypes { type1, moveWall, destroyEnemies };
 
 public class PlayerControl : MonoBehaviour
 {
@@ -106,6 +106,49 @@ public class PlayerControl : MonoBehaviour
         bullet1.transform.rotation = ShotSpawn1.transform.rotation;
         bullet1.transform.eulerAngles += shotDirection;
         
+    }
+    // Clearly the enemies on the side of the using player.
+    void UseBonus()
+    {
+        if (hasBonus)
+        {
+            switch (bonusType)
+            {
+                case BonusTypes.destroyEnemies:
+                    {
+                        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+                        foreach (GameObject enemy in enemies)
+                        {
+                            if (enemy.GetComponent<BasicEnemy>().enemyStats.player == this.player)
+                            {
+                                enemy.GetComponent<BasicEnemy>().Die();
+                            }
+                        }
+                        hasBonus = false;
+                        return;
+                    }
+                case BonusTypes.moveWall:
+                    {
+                        GameObject wall = GameObject.FindGameObjectWithTag("Wall");
+                        if (player == Player.left)
+                        {
+                            wall.GetComponent<WallControl>().moveWallRight();
+                            wall.GetComponent<WallControl>().moveWallRight();
+                            wall.GetComponent<WallControl>().moveWallRight();
+
+                        }
+                        else
+                        {
+                            wall.GetComponent<WallControl>().moveWallLeft();
+                            wall.GetComponent<WallControl>().moveWallLeft();
+                            wall.GetComponent<WallControl>().moveWallLeft();
+                        }
+                        hasBonus = false;
+                        return;
+                    }
+            }
+        }
+       
     }
 
 
