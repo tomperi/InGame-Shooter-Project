@@ -163,12 +163,11 @@ public class PlayerControl : MonoBehaviour
             }
             if (player == Player.left)
             {
-                GameObject.Find("BonusLeftUI").GetComponent<BonusUI>().show = false;
+                GameObject.Find("BonusRoulleteLeft").GetComponent<BonusUI>().show = false;
             }
             else
             {
-                GameObject.Find("BonusRightUI").GetComponent<BonusUI>().show = false;
-
+                GameObject.Find("BonusRoulleteRight").GetComponent<BonusUI>().show = false;
             }
         }
        

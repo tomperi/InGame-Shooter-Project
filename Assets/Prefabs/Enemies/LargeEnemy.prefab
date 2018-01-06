@@ -122,7 +122,7 @@ MonoBehaviour:
     player: 1
     type: 2
   explosion: {fileID: 1491992585198214, guid: fc74f76a35c858942869fccd89445726, type: 2}
-  distanceToStopFromWall: 2.5
+  distanceToStopFromWall: 4
   spawnAfter: 5
   spawnRate: 3
   ShotSpawn: {fileID: 1811114114285082}

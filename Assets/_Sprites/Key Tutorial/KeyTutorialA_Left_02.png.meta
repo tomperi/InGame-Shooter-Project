@@ -1,9 +1,18 @@
 fileFormatVersion: 2
 guid: a2e17e1f987c13c448630b46ede39f0f
-timeCreated: 1515253272
+timeCreated: 1515257045
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: KeyTutorialA_Left_02_0
+    21300002: KeyTutorialA_Left_02_1
+    21300004: KeyTutorialA_Left_02_2
+    21300006: KeyTutorialA_Left_02_3
+    21300008: KeyTutorialA_Left_02_4
+    21300010: KeyTutorialA_Left_02_5
+    21300012: KeyTutorialA_Left_02_6
+    21300014: KeyTutorialA_Left_02_7
+    21300016: KeyTutorialA_Left_02_8
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -40,7 +49,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -65,9 +74,153 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: KeyTutorialA_Left_02_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 677
+        width: 346
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: KeyTutorialA_Left_02_1
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 677
+        width: 346
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: KeyTutorialA_Left_02_2
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 677
+        width: 346
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: KeyTutorialA_Left_02_3
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 677
+        width: 346
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: KeyTutorialA_Left_02_4
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 677
+        width: 346
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: KeyTutorialA_Left_02_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 330
+        width: 346
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: KeyTutorialA_Left_02_6
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 330
+        width: 346
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: KeyTutorialA_Left_02_7
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 330
+        width: 346
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: KeyTutorialA_Left_02_8
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 330
+        width: 346
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
     outline: []
     physicsShape: []
   spritePackingTag: 
