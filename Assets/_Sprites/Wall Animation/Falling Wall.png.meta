@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 6ba46a262ae164a1389a46591cf6d2f3
-timeCreated: 1515161524
+timeCreated: 1515253464
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -112,11 +112,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1174
-        width: 184
-        height: 874
+        y: 598
+        width: 421
+        height: 1450
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -125,12 +125,12 @@ TextureImporter:
       name: Falling Wall_1
       rect:
         serializedVersion: 2
-        x: 184
+        x: 185
         y: 1174
-        width: 184
+        width: 185
         height: 874
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -139,12 +139,12 @@ TextureImporter:
       name: Falling Wall_2
       rect:
         serializedVersion: 2
-        x: 552
+        x: 555
         y: 1174
-        width: 184
+        width: 185
         height: 874
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -153,12 +153,12 @@ TextureImporter:
       name: Falling Wall_3
       rect:
         serializedVersion: 2
-        x: 736
+        x: 740
         y: 1174
-        width: 184
+        width: 185
         height: 874
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -167,12 +167,12 @@ TextureImporter:
       name: Falling Wall_4
       rect:
         serializedVersion: 2
-        x: 920
+        x: 925
         y: 1174
-        width: 184
+        width: 185
         height: 874
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -181,12 +181,12 @@ TextureImporter:
       name: Falling Wall_5
       rect:
         serializedVersion: 2
-        x: 1104
+        x: 1110
         y: 1174
-        width: 184
+        width: 185
         height: 874
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -195,12 +195,12 @@ TextureImporter:
       name: Falling Wall_6
       rect:
         serializedVersion: 2
-        x: 1472
+        x: 1480
         y: 1174
-        width: 184
+        width: 185
         height: 874
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -209,12 +209,12 @@ TextureImporter:
       name: Falling Wall_7
       rect:
         serializedVersion: 2
-        x: 1656
+        x: 1665
         y: 1174
-        width: 184
+        width: 185
         height: 874
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -223,12 +223,12 @@ TextureImporter:
       name: Falling Wall_8
       rect:
         serializedVersion: 2
-        x: 2024
+        x: 2035
         y: 1174
-        width: 184
+        width: 185
         height: 874
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -237,12 +237,12 @@ TextureImporter:
       name: Falling Wall_9
       rect:
         serializedVersion: 2
-        x: 2392
+        x: 2405
         y: 1174
-        width: 184
+        width: 185
         height: 874
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -251,12 +251,12 @@ TextureImporter:
       name: Falling Wall_10
       rect:
         serializedVersion: 2
-        x: 2576
+        x: 2590
         y: 1174
-        width: 184
+        width: 185
         height: 874
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -265,12 +265,12 @@ TextureImporter:
       name: Falling Wall_11
       rect:
         serializedVersion: 2
-        x: 2944
+        x: 2960
         y: 1174
-        width: 184
+        width: 185
         height: 874
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -279,12 +279,12 @@ TextureImporter:
       name: Falling Wall_12
       rect:
         serializedVersion: 2
-        x: 3128
+        x: 3145
         y: 1174
-        width: 184
+        width: 185
         height: 874
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -293,12 +293,12 @@ TextureImporter:
       name: Falling Wall_13
       rect:
         serializedVersion: 2
-        x: 3312
+        x: 3330
         y: 1174
-        width: 184
+        width: 185
         height: 874
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -307,12 +307,12 @@ TextureImporter:
       name: Falling Wall_14
       rect:
         serializedVersion: 2
-        x: 3496
+        x: 3515
         y: 1174
-        width: 184
+        width: 185
         height: 874
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -323,10 +323,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 300
-        width: 184
+        width: 185
         height: 874
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -335,12 +335,12 @@ TextureImporter:
       name: Falling Wall_16
       rect:
         serializedVersion: 2
-        x: 184
+        x: 185
         y: 300
-        width: 184
+        width: 185
         height: 874
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -349,12 +349,12 @@ TextureImporter:
       name: Falling Wall_17
       rect:
         serializedVersion: 2
-        x: 552
+        x: 555
         y: 300
-        width: 184
+        width: 185
         height: 874
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -363,12 +363,12 @@ TextureImporter:
       name: Falling Wall_18
       rect:
         serializedVersion: 2
-        x: 736
+        x: 740
         y: 300
-        width: 184
+        width: 185
         height: 874
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -377,12 +377,12 @@ TextureImporter:
       name: Falling Wall_19
       rect:
         serializedVersion: 2
-        x: 920
+        x: 925
         y: 300
-        width: 184
+        width: 185
         height: 874
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -391,12 +391,12 @@ TextureImporter:
       name: Falling Wall_20
       rect:
         serializedVersion: 2
-        x: 1104
+        x: 1110
         y: 300
-        width: 184
+        width: 185
         height: 874
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -405,12 +405,12 @@ TextureImporter:
       name: Falling Wall_21
       rect:
         serializedVersion: 2
-        x: 1472
+        x: 1480
         y: 300
-        width: 184
+        width: 185
         height: 874
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -419,12 +419,12 @@ TextureImporter:
       name: Falling Wall_22
       rect:
         serializedVersion: 2
-        x: 1656
+        x: 1665
         y: 300
-        width: 184
+        width: 185
         height: 874
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -433,12 +433,12 @@ TextureImporter:
       name: Falling Wall_23
       rect:
         serializedVersion: 2
-        x: 2024
+        x: 2035
         y: 300
-        width: 184
+        width: 185
         height: 874
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -447,12 +447,12 @@ TextureImporter:
       name: Falling Wall_24
       rect:
         serializedVersion: 2
-        x: 2392
+        x: 2405
         y: 300
-        width: 184
+        width: 185
         height: 874
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -461,12 +461,12 @@ TextureImporter:
       name: Falling Wall_25
       rect:
         serializedVersion: 2
-        x: 2576
+        x: 2590
         y: 300
-        width: 184
+        width: 185
         height: 874
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -475,12 +475,12 @@ TextureImporter:
       name: Falling Wall_26
       rect:
         serializedVersion: 2
-        x: 2944
+        x: 2960
         y: 300
-        width: 184
+        width: 185
         height: 874
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -489,12 +489,12 @@ TextureImporter:
       name: Falling Wall_27
       rect:
         serializedVersion: 2
-        x: 3128
+        x: 3145
         y: 300
-        width: 184
+        width: 185
         height: 874
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -503,12 +503,12 @@ TextureImporter:
       name: Falling Wall_28
       rect:
         serializedVersion: 2
-        x: 3312
+        x: 3330
         y: 300
-        width: 184
+        width: 185
         height: 874
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -517,12 +517,12 @@ TextureImporter:
       name: Falling Wall_29
       rect:
         serializedVersion: 2
-        x: 3496
+        x: 3515
         y: 300
-        width: 184
+        width: 185
         height: 874
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

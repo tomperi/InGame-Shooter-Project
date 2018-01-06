@@ -9,6 +9,8 @@ public class TextManager : MonoBehaviour {
 	public float aValue = 1;
 	private CanvasGroup trans;
 	private bool show = true;
+	public GameObject Fadeout;
+	public GameObject Wall;
 
 	void Start()
 	{
@@ -31,11 +33,21 @@ public class TextManager : MonoBehaviour {
 			}
 
 			if (Input.anyKeyDown) {
-				Destroy (gameObject);
-				Destroy (GameObject.Find ("Logo"));
+				this.GetComponent<Text> ().enabled = false;
+				show = false;
+				Destroy (GameObject.Find ("LogoFadeIn"));
+
+				Fadeout.SetActive (true);
+				Debug.Log (Fadeout.GetComponent<CanvasGroup> ().alpha);
+
 			}
 		
 		}
+
+		if (Fadeout.GetComponent<CanvasGroup> ().alpha == 0f) {
+			Wall.SetActive (true);
+		}
+			
 			
 	}
 
