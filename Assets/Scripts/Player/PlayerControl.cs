@@ -4,7 +4,7 @@ using UnityEngine;
 
 // Define data types
 public enum Player { right, left };
-public enum BonusTypes { type1, moveWall, destroyEnemies };
+public enum BonusTypes { spawnLargeEnemy, moveWall, destroyEnemies };
 
 public class PlayerControl : MonoBehaviour
 {
@@ -35,7 +35,7 @@ public class PlayerControl : MonoBehaviour
             maxAngleUp = defaultAngle - maxAngle;
             maxAngleDown = defaultAngle + maxAngle;
             shotDirection = new Vector3(0, 0, -90);
-            bonusKey = ".";
+            bonusKey = "right shift";
         } else
         {
             verticalAxis = "LeftVertical";
@@ -45,7 +45,7 @@ public class PlayerControl : MonoBehaviour
             maxAngleUp = defaultAngle - maxAngle;
             maxAngleDown = defaultAngle + maxAngle;
             shotDirection = new Vector3(0, 0, 90);
-            bonusKey = "q";
+            bonusKey = "tab";
         }
     }
 	
@@ -152,22 +152,29 @@ public class PlayerControl : MonoBehaviour
                         this.hasBonus = false;
                         break;
                     }
+                case BonusTypes.spawnLargeEnemy:
+                    {
+                        break;
+                    }
                 default:
                     {
-                        Debug.Log("Bonus function called, probably type 1.");
+                        Debug.Log("Bonus function called. Bad type");
                         break;
                     }
 
 
 
             }
+
             if (player == Player.left)
             {
-                GameObject.Find("BonusRoulleteLeft").GetComponent<BonusUI>().show = false;
+                Debug.Log(player);
+                GameObject.Find("GameManager").GetComponent<GameController>().PlayerUsedBonus(Player.left);
             }
             else
             {
-                GameObject.Find("BonusRoulleteRight").GetComponent<BonusUI>().show = false;
+                Debug.Log(player);
+                GameObject.Find("GameManager").GetComponent<GameController>().PlayerUsedBonus(Player.right);
             }
         }
        

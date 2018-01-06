@@ -18,15 +18,14 @@ public class Bonus : BasicEnemy
         {
             if (other.tag == "RightPlayer")
             {
-                GameObject.Find("HeroRight").GetComponent<PlayerControl>().hasBonus = true;
-                GameObject.Find("BonusRoulleteRight").GetComponent<BonusUI>().show = true;
+                GameObject.Find("GameManager").GetComponent<GameController>().GiveBonus(Player.right);
             } else
             {
-                GameObject.Find("HeroLeft").GetComponent<PlayerControl>().hasBonus = true;
-                GameObject.Find("BonusRoulleteLeft").GetComponent<BonusUI>().show = true;
+                GameObject.Find("GameManager").GetComponent<GameController>().GiveBonus(Player.left);
             }
             Die();
         }
     }
+
 }
 
