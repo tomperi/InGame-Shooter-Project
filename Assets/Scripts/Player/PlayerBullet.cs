@@ -42,6 +42,7 @@ public class PlayerBullet : MonoBehaviour {
         {
             other.GetComponent<BasicEnemy>().enemyStats.hp--;
             Destroy(this.gameObject);
+            //if other.
         }
         
     }

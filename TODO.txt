@@ -61,3 +61,30 @@ Features
 Scenematics
 	Intro - move the menu, place wall, then drop players
 	Lose cinematics
+
+
+Todays agenda
+	Change hovering enemy to blue guy (+shooting animation)
+	Bonus icons - place 
+	Large player - add explosion when hitting the head
+	Hovering enemy - if shots hit the wall, nothing happens, if they hit the player, the wall moves
+	Fix all enemy sizes using the proportions file
+	If the wall goes beyond some x, make the player flash
+	Music - intro, main (effects?)
+	FTUE - add instructions
+	Controls - right player - ctrl for fire, shift for bonus
+		   Left player - caps for fire, tab for bonus
+	Bonus mechanism - add animation + icon for each bonus 	
+	More bonuses - spawn big enemy for the other player
+
+
+
+
+
+	
+
+
+
+
+
+

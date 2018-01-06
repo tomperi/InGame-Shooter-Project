@@ -315,8 +315,8 @@ public class WaveSpawner : MonoBehaviour {
     {
         GameObject.Find("HeroLeft").GetComponent<PlayerControl>().dock = false;
         GameObject.Find("HeroRight").GetComponent<PlayerControl>().dock = false;
-        GameObject.Find("UndockText1").GetComponent<FlickeringText>().appear();
-        GameObject.Find("UndockText2").GetComponent<FlickeringText>().appear();
+        GameObject.Find("TutorialObjects").GetComponent<TutorialObjects>().glideLeft.SetActive(true);
+        GameObject.Find("TutorialObjects").GetComponent<TutorialObjects>().glideRight.SetActive(true);
     }
 }
 
