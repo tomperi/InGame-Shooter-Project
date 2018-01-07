@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 // Define data types
 public enum Player { right, left };
@@ -18,15 +19,23 @@ public class PlayerControl : MonoBehaviour
     public bool dock;
     public bool hasBonus, firstBonus;
     public BonusTypes bonusType;
+    public float fireRate;
+
 
     private string verticalAxis, horizontalAxis, fire, bonusKey;
     private Vector2 min, max;
     private Vector3 shotDirection;
     private float maxAngleUp, maxAngleDown, defaultAngle;
-    
+    private float nextFire, nextBlink;
 
-	// Use this for initialization
-	void Start () {
+
+    public float StartBlink;
+    private bool isBlink = false;
+    public float Die;
+    public Renderer rend;
+
+    // Use this for initialization
+    void Start () {
 		if (player.Equals(Player.right))
         {
             verticalAxis = "RightVertical";
@@ -48,31 +57,40 @@ public class PlayerControl : MonoBehaviour
             shotDirection = new Vector3(0, 0, 90);
             bonusKey = "tab";
         }
+
+        rend = GetComponent<Renderer>();
+        rend.enabled = true;
     }
 	
 	// Update is called once per frame
 	void Update () {
         // Move along the y axis
-        if (!dock)
+        if (GameObject.Find("GameManager").GetComponent<GameController>().GameOver == false)
         {
-            float y = Input.GetAxisRaw(verticalAxis);
-            Vector2 yAxisMovement = new Vector2(0, y * speed);
-            Move(yAxisMovement);
-        }
+            if (!dock)
+            {
+                float y = Input.GetAxisRaw(verticalAxis);
+                Vector2 yAxisMovement = new Vector2(0, y * speed);
+                Move(yAxisMovement);
+            }
 
-        // Rotate
-        float rotate = Input.GetAxisRaw(horizontalAxis);
-        Rotate(rotate);
+            // Rotate
+            float rotate = Input.GetAxisRaw(horizontalAxis);
+            Rotate(rotate);
 
-        if (Input.GetKeyDown(fire))
-        {
-            Shot();
-        }
-        if (Input.GetKeyDown(bonusKey))
-        {
-            UseBonus();
-        }
+            if (Input.GetKeyDown(fire) && Time.time > nextFire)
+            {
+                nextFire = Time.time + fireRate;
+                Shot();
+            }
+            if (Input.GetKeyDown(bonusKey))
+            {
+                UseBonus();
+            }
 
+            CheckHP();
+        }
+            
     }
 
     void Move(Vector2 direction)
@@ -195,6 +213,88 @@ public class PlayerControl : MonoBehaviour
        
     }
 
+    void CheckHP()
+    {
+        if (player == Player.left)
+        {
+            if (transform.localPosition.x < 1)
+            {
+
+                nextBlink += Time.deltaTime;
+
+                if (nextBlink >= 0.4)
+                {
+                    GetComponent<SpriteRenderer>().enabled = true;
+                }
+
+                if (nextBlink >= 1)
+                {
+                    GetComponent<SpriteRenderer>().enabled = false;
+                    nextBlink = 0;
+                }
+
+            }
+            else if (isBlink == true)
+            {
+                rend.enabled = true;
+            }
+
+            if (transform.localPosition.x < -0.4)
+            {
+                if (GameObject.Find("GameManager").GetComponent<GameController>().GameOver == false)
+                {
+                    Debug.Log("Die");
+                    GameObject.Find("GameManager").GetComponent<GameController>().GameOver = true;
+                    GlobalControl.Instance.PlayerWon = 1;
+                    GameObject.Find("SpawnManager").GetComponent<WaveSpawner>().killAll = true;
+                    GameObject.Find("SpawnManager").GetComponent<WaveSpawner>().startSpawn = false;
+                    StartCoroutine("Wait");
+                }
+            }
+        } else
+        {
+            if (transform.localPosition.x > 7.5)
+            {
+
+                nextBlink += Time.deltaTime;
+
+                if (nextBlink >= 0.5)
+                {
+                    GetComponent<SpriteRenderer>().enabled = true;
+                }
+
+                if (nextBlink >= 1)
+                {
+                    GetComponent<SpriteRenderer>().enabled = false;
+                    nextBlink = 0;
+                }
+
+            }
+            else if (isBlink == true)
+            {
+                rend.enabled = true;
+            }
+
+            if (transform.localPosition.x > 8.62)
+            {
+                if (GameObject.Find("GameManager").GetComponent<GameController>().GameOver == false)
+                {
+                    Debug.Log("Die");
+                    GameObject.Find("GameManager").GetComponent<GameController>().GameOver = true;
+                    GlobalControl.Instance.PlayerWon = 0;
+                    GameObject.Find("SpawnManager").GetComponent<WaveSpawner>().killAll = true;
+                    GameObject.Find("SpawnManager").GetComponent<WaveSpawner>().startSpawn = false;
+                    StartCoroutine("Wait");
+                }
+            }
+        }
+    }
+
+    IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene(2); 
+    }
 
 }
 

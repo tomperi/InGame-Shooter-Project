@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 95020512868212742}
   - component: {fileID: 70097837585308316}
   - component: {fileID: 50811817177084362}
-  - component: {fileID: 114249434029796154}
+  - component: {fileID: 114310686980229940}
   m_Layer: 0
   m_Name: MediumEnemyFire
   m_TagString: Enemy
@@ -96,7 +96,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114249434029796154
+--- !u!114 &114310686980229940
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -104,7 +104,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1323906158080166}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08c0b5cdcf8a6e849b9ca4cada1588db, type: 3}
+  m_Script: {fileID: 11500000, guid: f2ccc29f26d44374cab25edbfc3daed8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   enemyStats:
@@ -113,7 +113,7 @@ MonoBehaviour:
     speed: 2.5
     player: 0
     type: 0
-  explosion: {fileID: 1491992585198214, guid: fc74f76a35c858942869fccd89445726, type: 2}
+  explosion: {fileID: 1954986507215774, guid: 5783705494d05a2408d2d57529d1eb60, type: 2}
 --- !u!212 &212379979111571660
 SpriteRenderer:
   m_ObjectHideFlags: 1

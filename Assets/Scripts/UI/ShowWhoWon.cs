@@ -11,10 +11,10 @@ public class ShowWhoWon : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
-		PlayerWon = GlobalControl.Instance.PlayerWon;
 
-		Debug.Log (PlayerWon);
+        PlayerWon = GlobalControl.Instance.PlayerWon;
+
+        Debug.Log (PlayerWon);
 
 		if (PlayerWon == 0) {
 			RightPlayer.SetActive (true);

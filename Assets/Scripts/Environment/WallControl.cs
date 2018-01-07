@@ -10,15 +10,18 @@ public class WallControl : MonoBehaviour {
     Vector2 pos, posPlayerRight, posPlayerLeft;
 
     void OnTriggerEnter2D(Collider2D other) {
-
-        //Player player = other.GetComponent<EnemyControl> ().player;
-        Player player = other.GetComponent<BasicEnemy>().enemyStats.player;
-		if (player.Equals(Player.right))
+        
+        if (other.name != "MediumEnemyFire(Clone)")
         {
-            moveWallRight();
-        } else
-        {
-            moveWallLeft();
+            Player player = other.GetComponent<BasicEnemy>().enemyStats.player;
+            if (player.Equals(Player.right))
+            {
+                moveWallRight();
+            }
+            else
+            {
+                moveWallLeft();
+            }
         }
 
         other.GetComponent<BasicEnemy>().Die();

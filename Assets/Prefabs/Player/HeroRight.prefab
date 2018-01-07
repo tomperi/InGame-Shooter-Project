@@ -405,6 +405,7 @@ MonoBehaviour:
   hasBonus: 0
   firstBonus: 1
   bonusType: 0
+  fireRate: 0.2
 --- !u!212 &212001141678878840
 SpriteRenderer:
   m_ObjectHideFlags: 1

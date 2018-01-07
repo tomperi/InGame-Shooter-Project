@@ -15,12 +15,22 @@ public class WaveSpawner : MonoBehaviour {
 		public string name;
 		public BasicEnemy[] enemies;
         public int[] enemyCount;
-		public float rate;
-		public float maxSpeed;
-        public bool bonus;
+        public WaveParameters waveInfo;
 	}
 
-	public Wave[] waves;
+    [System.Serializable]
+    public class WaveParameters
+    {
+        public float rate;
+        public float minSpeed = 1f;
+        public float maxSpeed = 1f;
+        public float HPFactor;
+        public float mediumFireRate = 3f;
+        public float LargeFireRate = 3f;
+        public bool bonus;
+    }
+
+    public Wave[] waves;
     public BasicEnemy bonus;
 	private int nextWave = 0;
 
@@ -32,8 +42,9 @@ public class WaveSpawner : MonoBehaviour {
 	private int enemiesSpawned = 0;
     private int totalEnemiesThisWave = 0;
     private int waveCount = 0;
+    private int loopFactor = 1;
 
-	private SpawnState state = SpawnState.COUNTING;
+	public SpawnState state = SpawnState.COUNTING;
 
     private bool uiPaused;
     
@@ -93,7 +104,8 @@ public class WaveSpawner : MonoBehaviour {
         state = SpawnState.COUNTING;
 		waveCountdown = timeBetweenWaves;
 		if (nextWave + 1 > waves.Length - 1) {
-			nextWave = 0;
+			nextWave = 2;
+            loopFactor += 1;
 			Debug.Log ("ALL WAVES COMPLETE! Looping..");
 		} else {
 			nextWave++;
@@ -128,11 +140,10 @@ public class WaveSpawner : MonoBehaviour {
         int bonusTimingRight = -1;
         int bonusTimingLeft = -1;
 
-        if (_wave.bonus)
+        if (_wave.waveInfo.bonus)
         {
             bonusTimingRight = Random.Range(5, totalEnemiesThisWave - 2);
             bonusTimingLeft = Random.Range(5, totalEnemiesThisWave - 2);
-            Debug.Log("We're going to have a bonus in this round! " + bonusTimingLeft + " " + bonusTimingRight);
         }
 
         // Spawn a random enemy for both player, within the limit
@@ -151,21 +162,26 @@ public class WaveSpawner : MonoBehaviour {
             BasicEnemy enemyToRightPlayer = _wave.enemies[rightEnemy];
             BasicEnemy enemyToLeftPlayer = _wave.enemies[leftEnemy];
 
-            SpawnEnemy(enemyToRightPlayer, Player.right);
-            yield return new WaitForSeconds(1f / 2 * (_wave.rate * enemiesSpawned));
-            SpawnEnemy(enemyToLeftPlayer, Player.left);
+            SpawnEnemy(enemyToRightPlayer, Player.right, _wave);
+            if (rightEnemy == 0)
+                //yield return new WaitForSeconds(0.2f);
+                yield return new WaitForSeconds(1f / (_wave.waveInfo.rate * enemiesSpawned + 1));
+
+            SpawnEnemy(enemyToLeftPlayer, Player.left, _wave);
+            if (leftEnemy == 0)
+                //yield return new WaitForSeconds(0.2f);
+                yield return new WaitForSeconds(1f / (_wave.waveInfo.rate * enemiesSpawned + 1));
             enemiesSpawned += 1;
-			yield return new WaitForSeconds (1f / 2* (_wave.rate * enemiesSpawned));
 
             // Spawning bonuses (only if the player does not have a bonus when bonus is due)
             if ((i == bonusTimingRight) && (GameObject.Find("HeroRight").GetComponent<PlayerControl>().hasBonus == false))
             {
-                SpawnEnemy(bonus, Player.right);
+                SpawnEnemy(bonus, Player.right, _wave);
             }
 
             if ((i == bonusTimingLeft) && (GameObject.Find("HeroLeft").GetComponent<PlayerControl>().hasBonus == false))
             {
-                SpawnEnemy(bonus, Player.left);
+                SpawnEnemy(bonus, Player.left, _wave);
             }
         }
 
@@ -184,7 +200,7 @@ public class WaveSpawner : MonoBehaviour {
         return sum;
     }
 
-	public void SpawnEnemy (BasicEnemy _enemy, Player player)
+	public void SpawnEnemy (BasicEnemy _enemy, Player player, Wave _wave)
 	{
         if (startSpawn)
         {
@@ -198,6 +214,13 @@ public class WaveSpawner : MonoBehaviour {
                     break;
                 case (enemyType.medium):
                     enemy.transform.position = getMediumEnemyPosition(player);
+                    enemy.GetComponent<MediumEnemy>().spawnRate = (0.5f * loopFactor * _wave.waveInfo.mediumFireRate);
+                    enemy.GetComponent<MediumEnemy>().enemyStats.hp *= (int) (loopFactor * _wave.waveInfo.HPFactor);
+                    break;
+                case (enemyType.large):
+                    enemy.transform.position = getHardEnemyPosition(player);
+                    enemy.GetComponent<HardEnemy>().spawnRate = (0.5f * loopFactor * _wave.waveInfo.LargeFireRate);
+                    enemy.GetComponent<HardEnemy>().enemyStats.hp *= (int)(loopFactor * _wave.waveInfo.HPFactor);
                     break;
                 default:
                     enemy.transform.position = getHardEnemyPosition(player);
@@ -207,6 +230,33 @@ public class WaveSpawner : MonoBehaviour {
 
 		//Debug.Log("Spawning Enemy: " + _enemy.name);
 	}
+
+    public void SpawnEnemy(BasicEnemy _enemy, Player player)
+    {
+        if (startSpawn)
+        {
+            BasicEnemy enemy = Instantiate(_enemy);
+            enemy.enemyStats.player = player;
+            switch (enemy.enemyStats.type)
+            {
+                case (enemyType.small):
+                case (enemyType.bonus):
+                    enemy.transform.position = getEasyEnemyPosition(player);
+                    break;
+                case (enemyType.medium):
+                    enemy.transform.position = getMediumEnemyPosition(player);
+                    break;
+                case (enemyType.large):
+                    enemy.transform.position = getHardEnemyPosition(player);
+                    break;
+                default:
+                    enemy.transform.position = getHardEnemyPosition(player);
+                    break;
+            }
+        }
+
+        //Debug.Log("Spawning Enemy: " + _enemy.name);
+    }
 
     Vector2 getEasyEnemyPosition(Player player)
     {
@@ -253,11 +303,11 @@ public class WaveSpawner : MonoBehaviour {
 
         if (player.Equals(Player.right))
         {
-            return new Vector2(max.x + 1, 0);
+            return new Vector2(max.x + 1, Random.Range(-1.5f, 1.7f));
         }
         else
         {
-            return new Vector2(min.x - 1, 0);
+            return new Vector2(min.x - 1, Random.Range(-1.5f, 1.7f));
         }
     }
 

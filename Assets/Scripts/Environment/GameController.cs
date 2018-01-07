@@ -7,6 +7,7 @@ public class GameController : MonoBehaviour {
     public bool p1ready, p2ready;
     public GameObject b1p1, b2p1, b3p1;
     public GameObject b1p2, b2p2, b3p2;
+    public bool GameOver = false;
 
     public GameObject mainMusic;
 	// Use this for initialization

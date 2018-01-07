@@ -33,8 +33,7 @@ public abstract class BasicEnemy : MonoBehaviour {
         else
         {
             enemyStats.speed *= -1;
-            sr.flipX = true;
-            
+            sr.flipX = true; 
         }
         
     }

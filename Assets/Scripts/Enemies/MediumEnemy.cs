@@ -7,6 +7,7 @@ public class MediumEnemy : BasicEnemy {
     public float spawnRate;
     public int maxShots; //Set -1 for infinity
     public GameObject easyEnemy;
+    public float missleSpeed;
 
     private bool down;
     private int direction;
@@ -71,6 +72,7 @@ public class MediumEnemy : BasicEnemy {
             GameObject EasyEnemy = Instantiate(
             easyEnemy, this.transform.position, Quaternion.identity);
             EasyEnemy.GetComponent<BasicEnemy>().enemyStats.player = this.enemyStats.player;
+            EasyEnemy.GetComponent<BasicEnemy>().enemyStats.speed = missleSpeed;
 
             maxShots--;
         }
