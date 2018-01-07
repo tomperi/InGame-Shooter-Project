@@ -10,12 +10,13 @@ public class PlayerControl : MonoBehaviour
 {
     public GameObject PlayerBullet;
     public GameObject ShotSpawn1;
+    public BasicEnemy largeEnemy;
     //public GameObject ShotSpawn2;
     public Player player;
     public float speed, rotateSpeed;
     public float maxAngle;
     public bool dock;
-    public bool hasBonus;
+    public bool hasBonus, firstBonus;
     public BonusTypes bonusType;
 
     private string verticalAxis, horizontalAxis, fire, bonusKey;
@@ -122,6 +123,7 @@ public class PlayerControl : MonoBehaviour
             {
                 case BonusTypes.destroyEnemies:
                     {
+                        Debug.Log(player + " used destroy enemy bonus");
                         GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
                         foreach (GameObject enemy in enemies)
                         {
@@ -135,16 +137,20 @@ public class PlayerControl : MonoBehaviour
                     }
                 case BonusTypes.moveWall:
                     {
+                        Debug.Log(player + " used move wall bonus");
                         GameObject wall = GameObject.FindGameObjectWithTag("Wall");
                         if (player == Player.left)
                         {
                             wall.GetComponent<WallControl>().moveWallRight();
                             wall.GetComponent<WallControl>().moveWallRight();
                             wall.GetComponent<WallControl>().moveWallRight();
-
+                            wall.GetComponent<WallControl>().moveWallRight();
+                            wall.GetComponent<WallControl>().moveWallRight();
                         }
                         else
                         {
+                            wall.GetComponent<WallControl>().moveWallLeft();
+                            wall.GetComponent<WallControl>().moveWallLeft();
                             wall.GetComponent<WallControl>().moveWallLeft();
                             wall.GetComponent<WallControl>().moveWallLeft();
                             wall.GetComponent<WallControl>().moveWallLeft();
@@ -154,6 +160,15 @@ public class PlayerControl : MonoBehaviour
                     }
                 case BonusTypes.spawnLargeEnemy:
                     {
+                        Debug.Log(player + " used spawn large enemy bonus");
+                        if (player == Player.left)
+                        {
+                            GameObject.Find("SpawnManager").GetComponent<WaveSpawner>().SpawnEnemy(largeEnemy, Player.right);
+                        } else
+                        {
+                            GameObject.Find("SpawnManager").GetComponent<WaveSpawner>().SpawnEnemy(largeEnemy, Player.left);
+                        }
+                        this.hasBonus = false;
                         break;
                     }
                 default:

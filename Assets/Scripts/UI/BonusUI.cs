@@ -78,6 +78,12 @@ public class BonusUI : MonoBehaviour
                 go = GameObject.Find("BonusSummonLeft");
                 if (go != null)
                     go.GetComponent<SpriteRenderer>().enabled = true;
+                go = GameObject.Find("BonusActivateLeft");
+                if ((go != null) && GameObject.Find("HeroLeft").GetComponent<PlayerControl>().hasBonus)
+                    go.GetComponent<SpriteRenderer>().enabled = true;
+                go = GameObject.Find("BonusActivateRight");
+                if ((go != null) && GameObject.Find("HeroRight").GetComponent<PlayerControl>().hasBonus)
+                    go.GetComponent<SpriteRenderer>().enabled = true;
             }
             count++;
         }

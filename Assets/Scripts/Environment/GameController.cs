@@ -7,6 +7,8 @@ public class GameController : MonoBehaviour {
     public bool p1ready, p2ready;
     public GameObject b1p1, b2p1, b3p1;
     public GameObject b1p2, b2p2, b3p2;
+
+    public GameObject mainMusic;
 	// Use this for initialization
 	void Start () {
 		
@@ -30,6 +32,10 @@ public class GameController : MonoBehaviour {
         if (p1ready && p2ready)
         {
             GameObject.Find("SpawnManager").GetComponent<WaveSpawner>().startSpawn = true;
+            if (GameObject.Find("Intro Music") != null)
+                GameObject.Find("Intro Music").SetActive(false);
+
+            mainMusic.SetActive(true);
         }
     }
 
@@ -40,14 +46,12 @@ public class GameController : MonoBehaviour {
             GameObject.Find("HeroRight").GetComponent<PlayerControl>().hasBonus = true;
             GameObject.Find("HeroRight").GetComponent<PlayerControl>().bonusType = RandomBonus(player);
             GameObject.Find("RouletteRight").GetComponent<BonusUI>().startRoullete();
-            GameObject.Find("BonusActivateRight").GetComponent<SpriteRenderer>().enabled = true;
         }
         else
         {
             GameObject.Find("HeroLeft").GetComponent<PlayerControl>().hasBonus = true;
             GameObject.Find("HeroLeft").GetComponent<PlayerControl>().bonusType = RandomBonus(player);
             GameObject.Find("RouletteLeft").GetComponent<BonusUI>().startRoullete();
-            GameObject.Find("BonusActivateLeft").GetComponent<SpriteRenderer>().enabled = true;
         }
     }
 
@@ -61,7 +65,8 @@ public class GameController : MonoBehaviour {
             if (player.Equals(Player.right))
             {
                 b1p1.SetActive(true);
-            } else
+            }
+            else
             {
                 b1p2.SetActive(true);
             }
@@ -107,7 +112,11 @@ public class GameController : MonoBehaviour {
                 go.GetComponent<SpriteRenderer>().enabled = false;
                 go.SetActive(false);
             }
-            GameObject.Find("BonusActivateRight").GetComponent<SpriteRenderer>().enabled = false;
+            if (GameObject.Find("HeroRight").GetComponent<PlayerControl>().firstBonus == true)
+            {
+                GameObject.Find("BonusActivateRight").SetActive(false);
+                GameObject.Find("HeroRight").GetComponent<PlayerControl>().firstBonus = false;
+            }
         } else
         {
             foreach (GameObject go in GameObject.FindGameObjectsWithTag("bonusIconsLeft"))
@@ -115,7 +124,11 @@ public class GameController : MonoBehaviour {
                 go.GetComponent<SpriteRenderer>().enabled = false;
                 go.SetActive(false);
             }
-            GameObject.Find("BonusActivateLeft").GetComponent<SpriteRenderer>().enabled = false;
+            if (GameObject.Find("HeroLeft").GetComponent<PlayerControl>().firstBonus == true)
+            {
+                GameObject.Find("BonusActivateLeft").SetActive(false);
+                GameObject.Find("HeroLeft").GetComponent<PlayerControl>().firstBonus = false;
+            }
         }
     }
 }

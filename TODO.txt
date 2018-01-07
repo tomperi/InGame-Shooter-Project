@@ -65,21 +65,20 @@ Scenematics
 
 Todays agenda
 	Change hovering enemy to blue guy (+shooting animation)
-	Bonus icons - place 
+[DONE]	Bonus icons - place 
 	Large player - add explosion when hitting the head
 	Hovering enemy - if shots hit the wall, nothing happens, if they hit the player, the wall moves
-	Fix all enemy sizes using the proportions file
-	If the wall goes beyond some x, make the player flash
-	Music - intro, main (effects?)
-	FTUE - add instructions
-	Controls - right player - ctrl for fire, shift for bonus
-		   Left player - caps for fire, tab for bonus
+[DONE]	Fix all enemy sizes using the proportions file
+[DONE]	Music - intro, main (effects?)
+[DONE]	FTUE - add instructions
 	Bonus mechanism - add animation + icon for each bonus 	
-	More bonuses - spawn big enemy for the other player
 
 
-
-
+Small missions left
+	Fix spawns
+	If the wall goes beyond some x, make the player flash
+	fix bonus activation
+	Increase hp of medium and large enemies between rounds
 
 	
 

@@ -108,9 +108,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyStats:
-    maxSpeed: 0
+    maxSpeed: 2
     hp: 1
-    speed: 1
+    speed: 2
     player: 0
     type: 3
   explosion: {fileID: 1077421902950694, guid: 6977cfde98562dd42bff207edf672700, type: 2}

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class WaveSpawner : MonoBehaviour {
 
@@ -159,13 +160,11 @@ public class WaveSpawner : MonoBehaviour {
             // Spawning bonuses (only if the player does not have a bonus when bonus is due)
             if ((i == bonusTimingRight) && (GameObject.Find("HeroRight").GetComponent<PlayerControl>().hasBonus == false))
             {
-                Debug.Log("bonus for right");
                 SpawnEnemy(bonus, Player.right);
             }
 
             if ((i == bonusTimingLeft) && (GameObject.Find("HeroLeft").GetComponent<PlayerControl>().hasBonus == false))
             {
-                Debug.Log("bonus for right");
                 SpawnEnemy(bonus, Player.left);
             }
         }
@@ -185,7 +184,7 @@ public class WaveSpawner : MonoBehaviour {
         return sum;
     }
 
-	void SpawnEnemy (BasicEnemy _enemy, Player player)
+	public void SpawnEnemy (BasicEnemy _enemy, Player player)
 	{
         if (startSpawn)
         {
@@ -281,7 +280,7 @@ public class WaveSpawner : MonoBehaviour {
         {
             if (pause)
             {
-                Debug.Log("Change scene code here");
+                SceneManager.LoadScene(0);
             } else
             {
                 Debug.Log("Pause the scene");
