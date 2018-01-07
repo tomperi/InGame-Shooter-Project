@@ -236,7 +236,7 @@ public class PlayerControl : MonoBehaviour
             }
             else if (isBlink == true)
             {
-                rend.enabled = true;
+                GetComponent<SpriteRenderer>().enabled = true;
             }
 
             if (transform.localPosition.x < -0.4)
@@ -244,8 +244,8 @@ public class PlayerControl : MonoBehaviour
                 if (GameObject.Find("GameManager").GetComponent<GameController>().GameOver == false)
                 {
                     Debug.Log("Die");
-                    GameObject.Find("GameManager").GetComponent<GameController>().GameOver = true;
                     GlobalControl.Instance.PlayerWon = 1;
+                    GameObject.Find("GameManager").GetComponent<GameController>().GameOver = true;
                     GameObject.Find("SpawnManager").GetComponent<WaveSpawner>().killAll = true;
                     GameObject.Find("SpawnManager").GetComponent<WaveSpawner>().startSpawn = false;
                     StartCoroutine("Wait");
@@ -272,7 +272,7 @@ public class PlayerControl : MonoBehaviour
             }
             else if (isBlink == true)
             {
-                rend.enabled = true;
+                GetComponent<SpriteRenderer>().enabled = true;
             }
 
             if (transform.localPosition.x > 8.62)
@@ -280,8 +280,8 @@ public class PlayerControl : MonoBehaviour
                 if (GameObject.Find("GameManager").GetComponent<GameController>().GameOver == false)
                 {
                     Debug.Log("Die");
-                    GameObject.Find("GameManager").GetComponent<GameController>().GameOver = true;
                     GlobalControl.Instance.PlayerWon = 0;
+                    GameObject.Find("GameManager").GetComponent<GameController>().GameOver = true;
                     GameObject.Find("SpawnManager").GetComponent<WaveSpawner>().killAll = true;
                     GameObject.Find("SpawnManager").GetComponent<WaveSpawner>().startSpawn = false;
                     StartCoroutine("Wait");

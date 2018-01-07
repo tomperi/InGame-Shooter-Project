@@ -23,7 +23,7 @@ public class WallControl : MonoBehaviour {
                 moveWallLeft();
             }
         }
-
+        Debug.Log(other);
         other.GetComponent<BasicEnemy>().Die();
 		//Destroy(other.gameObject);
 	}
