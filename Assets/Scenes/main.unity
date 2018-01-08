@@ -298,7 +298,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da756aa39889c214ea26e31e4b955903, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move: 0.1
+  move: 0.15
   rightPlayer: {fileID: 422194579}
   leftPlayer: {fileID: 2086502187}
 --- !u!61 &218032139
@@ -622,7 +622,7 @@ MonoBehaviour:
     - {fileID: 114299073271870674, guid: c851661bec06b6245955ceca8dc0bdfb, type: 2}
     - {fileID: 114902042295218506, guid: cdc63ad5be575b04882259219712f127, type: 2}
     - {fileID: 114349765101579620, guid: 04dda8d08c63777489849783871aaf3b, type: 2}
-    enemyCount: 050000000000000000000000
+    enemyCount: 0e0000000000000000000000
     waveInfo:
       rate: 1
       minSpeed: 1
@@ -1382,7 +1382,7 @@ RectTransform:
   m_GameObject: {fileID: 1467084374}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 90}
-  m_LocalScale: {x: 0.008888889, y: 0.008888889, z: 0.008888889}
+  m_LocalScale: {x: 0.008895184, y: 0.008895184, z: 0.008895184}
   m_Children:
   - {fileID: 867920965}
   - {fileID: 1795770642}
@@ -1730,7 +1730,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: '- Press Space to Continue -
 
-    ESC to main menu'
+    ESC to restart'
 --- !u!222 &1795770644
 CanvasRenderer:
   m_ObjectHideFlags: 0

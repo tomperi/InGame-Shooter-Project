@@ -330,7 +330,8 @@ public class WaveSpawner : MonoBehaviour {
         {
             if (pause)
             {
-                SceneManager.LoadScene(0);
+                pause = false;
+                SceneManager.LoadScene(1);
             } else
             {
                 Debug.Log("Pause the scene");

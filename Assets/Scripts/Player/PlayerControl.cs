@@ -244,7 +244,7 @@ public class PlayerControl : MonoBehaviour
                 if (GameObject.Find("GameManager").GetComponent<GameController>().GameOver == false)
                 {
                     Debug.Log("Die");
-                    GlobalControl.Instance.PlayerWon = 1;
+                    GlobalControl.Instance.PlayerWon = 0;
                     GameObject.Find("GameManager").GetComponent<GameController>().GameOver = true;
                     GameObject.Find("SpawnManager").GetComponent<WaveSpawner>().killAll = true;
                     GameObject.Find("SpawnManager").GetComponent<WaveSpawner>().startSpawn = false;
@@ -280,7 +280,7 @@ public class PlayerControl : MonoBehaviour
                 if (GameObject.Find("GameManager").GetComponent<GameController>().GameOver == false)
                 {
                     Debug.Log("Die");
-                    GlobalControl.Instance.PlayerWon = 0;
+                    GlobalControl.Instance.PlayerWon = 1;
                     GameObject.Find("GameManager").GetComponent<GameController>().GameOver = true;
                     GameObject.Find("SpawnManager").GetComponent<WaveSpawner>().killAll = true;
                     GameObject.Find("SpawnManager").GetComponent<WaveSpawner>().startSpawn = false;
